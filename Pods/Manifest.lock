@@ -1,0 +1,12 @@
+PODS:
+  - LongPressRecordButton (1.5.0)
+
+DEPENDENCIES:
+  - LongPressRecordButton
+
+SPEC CHECKSUMS:
+  LongPressRecordButton: 5db73b859708bbe86edb4e10f1a1eea9a6d9adb7
+
+PODFILE CHECKSUM: 44b8b08e2d75e2108447fba00b99f2fddd44ac2e
+
+COCOAPODS: 1.2.0

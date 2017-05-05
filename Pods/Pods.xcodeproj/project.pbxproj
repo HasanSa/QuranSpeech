@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B828D4535C1E4D7F4C8C9B89F694816 /* Pods-QuranSpeech-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC378F782E35B5B109388D0C80CAEED2 /* Pods-QuranSpeech-dummy.m */; };
+		0E2F66A14A4C428C9611F16AB27F45BB /* LongPressRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2326B881A1AF1B4AC0D3C9C746EAB91 /* LongPressRecordButton.swift */; };
+		2266E1D364E54ECACCEAA2AA01F4E84E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		2CC00862DF769FE01BD847D19AE80D31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		7C24CDFD8388D96EED81B3DC22D0E810 /* LongPressRecordButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C317BDD2D571B6033AB0A81C350601 /* LongPressRecordButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		881B3075E9208FA3CDED78611D23515C /* LongPressRecordButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 075EC7D4706340FB3E3C8FC5816C442E /* LongPressRecordButton-dummy.m */; };
+		DFA25BB3FAD58B205FB96F27D0DC4B85 /* Pods-QuranSpeech-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82EB6E8B1ED04C27A13D06F410E3A824 /* Pods-QuranSpeech-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C7CF72576D25F25BE6F3E91AED076DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D55947D680CC6520303D461C7E9C48F;
+			remoteInfo = LongPressRecordButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		075EC7D4706340FB3E3C8FC5816C442E /* LongPressRecordButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LongPressRecordButton-dummy.m"; sourceTree = "<group>"; };
+		2DEC33A2048CF9BA400838A70207D1E9 /* LongPressRecordButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LongPressRecordButton.xcconfig; sourceTree = "<group>"; };
+		3F9EBE4C599E75DD4BBCCA15B945089A /* Pods-QuranSpeech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuranSpeech.release.xcconfig"; sourceTree = "<group>"; };
+		56EF030A87DE802191190859BF72AF88 /* Pods-QuranSpeech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuranSpeech.debug.xcconfig"; sourceTree = "<group>"; };
+		82EB6E8B1ED04C27A13D06F410E3A824 /* Pods-QuranSpeech-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuranSpeech-umbrella.h"; sourceTree = "<group>"; };
+		892D610E4DC0A0C7C8344EE895F76FB3 /* LongPressRecordButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LongPressRecordButton-prefix.pch"; sourceTree = "<group>"; };
+		8CB58B4653266EFC80A56DBF963AC7B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A6CD116D5199646B980A0F4752E3C2A8 /* Pods-QuranSpeech-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuranSpeech-frameworks.sh"; sourceTree = "<group>"; };
+		AF6EE89DECBD3FD592A0AD8D627C335C /* Pods-QuranSpeech-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuranSpeech-acknowledgements.plist"; sourceTree = "<group>"; };
+		B32B83DBC0F998C407232312356ABB40 /* LongPressRecordButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LongPressRecordButton.modulemap; sourceTree = "<group>"; };
+		B9682C570ED37619A4A67B5228EE2A2B /* Pods-QuranSpeech.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-QuranSpeech.modulemap"; sourceTree = "<group>"; };
+		BDA39D839FBBC96C495507E515052CAE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CDDA8817677F39414008DA54C0DBE167 /* LongPressRecordButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LongPressRecordButton.framework; path = LongPressRecordButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2326B881A1AF1B4AC0D3C9C746EAB91 /* LongPressRecordButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LongPressRecordButton.swift; path = LongPressRecordButton/LongPressRecordButton.swift; sourceTree = "<group>"; };
+		E1DDF46D5949FB79AA8A3D735101AEF8 /* Pods_QuranSpeech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QuranSpeech.framework; path = "Pods-QuranSpeech.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0A159A75610019C756812505C3EF7E /* Pods-QuranSpeech-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuranSpeech-resources.sh"; sourceTree = "<group>"; };
+		F2C317BDD2D571B6033AB0A81C350601 /* LongPressRecordButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LongPressRecordButton-umbrella.h"; sourceTree = "<group>"; };
+		FBB35CD7C772D001C6023856710D3393 /* Pods-QuranSpeech-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuranSpeech-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FC378F782E35B5B109388D0C80CAEED2 /* Pods-QuranSpeech-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuranSpeech-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D7BDCA224D954925BBB6EB832F00CFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CC00862DF769FE01BD847D19AE80D31 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0A9F34263F2105F03C2B91B9F13310F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2266E1D364E54ECACCEAA2AA01F4E84E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		237C2A7E58A7F9DF5985033D630F0D2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDDA8817677F39414008DA54C0DBE167 /* LongPressRecordButton.framework */,
+				E1DDF46D5949FB79AA8A3D735101AEF8 /* Pods_QuranSpeech.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D13A893FE42AB50CE3447E0376560D9 /* Pods-QuranSpeech */ = {
+			isa = PBXGroup;
+			children = (
+				8CB58B4653266EFC80A56DBF963AC7B0 /* Info.plist */,
+				B9682C570ED37619A4A67B5228EE2A2B /* Pods-QuranSpeech.modulemap */,
+				FBB35CD7C772D001C6023856710D3393 /* Pods-QuranSpeech-acknowledgements.markdown */,
+				AF6EE89DECBD3FD592A0AD8D627C335C /* Pods-QuranSpeech-acknowledgements.plist */,
+				FC378F782E35B5B109388D0C80CAEED2 /* Pods-QuranSpeech-dummy.m */,
+				A6CD116D5199646B980A0F4752E3C2A8 /* Pods-QuranSpeech-frameworks.sh */,
+				EA0A159A75610019C756812505C3EF7E /* Pods-QuranSpeech-resources.sh */,
+				82EB6E8B1ED04C27A13D06F410E3A824 /* Pods-QuranSpeech-umbrella.h */,
+				56EF030A87DE802191190859BF72AF88 /* Pods-QuranSpeech.debug.xcconfig */,
+				3F9EBE4C599E75DD4BBCCA15B945089A /* Pods-QuranSpeech.release.xcconfig */,
+			);
+			name = "Pods-QuranSpeech";
+			path = "Target Support Files/Pods-QuranSpeech";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7B668E2A905CAFB3EEEAD0E3A467CBAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83ABA48103C23C346A0ACC93A2D33257 /* LongPressRecordButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				7B668E2A905CAFB3EEEAD0E3A467CBAB /* Pods */,
+				237C2A7E58A7F9DF5985033D630F0D2C /* Products */,
+				E724BB65746F865E55192E2A12BE5BDD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		83ABA48103C23C346A0ACC93A2D33257 /* LongPressRecordButton */ = {
+			isa = PBXGroup;
+			children = (
+				D2326B881A1AF1B4AC0D3C9C746EAB91 /* LongPressRecordButton.swift */,
+				B8D7AEA8B6A599935AF8D05EF18B6B56 /* Support Files */,
+			);
+			name = LongPressRecordButton;
+			path = LongPressRecordButton;
+			sourceTree = "<group>";
+		};
+		B8D7AEA8B6A599935AF8D05EF18B6B56 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDA39D839FBBC96C495507E515052CAE /* Info.plist */,
+				B32B83DBC0F998C407232312356ABB40 /* LongPressRecordButton.modulemap */,
+				2DEC33A2048CF9BA400838A70207D1E9 /* LongPressRecordButton.xcconfig */,
+				075EC7D4706340FB3E3C8FC5816C442E /* LongPressRecordButton-dummy.m */,
+				892D610E4DC0A0C7C8344EE895F76FB3 /* LongPressRecordButton-prefix.pch */,
+				F2C317BDD2D571B6033AB0A81C350601 /* LongPressRecordButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LongPressRecordButton";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E724BB65746F865E55192E2A12BE5BDD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D13A893FE42AB50CE3447E0376560D9 /* Pods-QuranSpeech */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		15904936BA4360E8B926FEFC92037626 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFA25BB3FAD58B205FB96F27D0DC4B85 /* Pods-QuranSpeech-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7823171D3E9E57EC20756DC6BE1A416A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C24CDFD8388D96EED81B3DC22D0E810 /* LongPressRecordButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0D55947D680CC6520303D461C7E9C48F /* LongPressRecordButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E8D3FEE41D57354CB48903D592B77CA /* Build configuration list for PBXNativeTarget "LongPressRecordButton" */;
+			buildPhases = (
+				9AF1D0817B3485A8792D68004150848A /* Sources */,
+				6D7BDCA224D954925BBB6EB832F00CFA /* Frameworks */,
+				7823171D3E9E57EC20756DC6BE1A416A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LongPressRecordButton;
+			productName = LongPressRecordButton;
+			productReference = CDDA8817677F39414008DA54C0DBE167 /* LongPressRecordButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BDFC6F446F202CED878EB5CE9B35761C /* Pods-QuranSpeech */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FB52075C9B75BDBDD127390F5E9C994 /* Build configuration list for PBXNativeTarget "Pods-QuranSpeech" */;
+			buildPhases = (
+				17E1E37D21ACBAE0917152AA84D1AE44 /* Sources */,
+				F0A9F34263F2105F03C2B91B9F13310F /* Frameworks */,
+				15904936BA4360E8B926FEFC92037626 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79909D8828C33C9BDFAAE6161B9D91B0 /* PBXTargetDependency */,
+			);
+			name = "Pods-QuranSpeech";
+			productName = "Pods-QuranSpeech";
+			productReference = E1DDF46D5949FB79AA8A3D735101AEF8 /* Pods_QuranSpeech.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 237C2A7E58A7F9DF5985033D630F0D2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D55947D680CC6520303D461C7E9C48F /* LongPressRecordButton */,
+				BDFC6F446F202CED878EB5CE9B35761C /* Pods-QuranSpeech */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17E1E37D21ACBAE0917152AA84D1AE44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B828D4535C1E4D7F4C8C9B89F694816 /* Pods-QuranSpeech-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AF1D0817B3485A8792D68004150848A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				881B3075E9208FA3CDED78611D23515C /* LongPressRecordButton-dummy.m in Sources */,
+				0E2F66A14A4C428C9611F16AB27F45BB /* LongPressRecordButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79909D8828C33C9BDFAAE6161B9D91B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LongPressRecordButton;
+			target = 0D55947D680CC6520303D461C7E9C48F /* LongPressRecordButton */;
+			targetProxy = 1C7CF72576D25F25BE6F3E91AED076DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29A98D472CAFD223905DFBD7319FB1F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F9EBE4C599E75DD4BBCCA15B945089A /* Pods-QuranSpeech.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QuranSpeech/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuranSpeech/Pods-QuranSpeech.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QuranSpeech;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4656AA4936DC27B7DB33D28F60077395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DEC33A2048CF9BA400838A70207D1E9 /* LongPressRecordButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LongPressRecordButton/LongPressRecordButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LongPressRecordButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LongPressRecordButton/LongPressRecordButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LongPressRecordButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		725B8A1626B9A8F615DBFFF33C584BC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DEC33A2048CF9BA400838A70207D1E9 /* LongPressRecordButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LongPressRecordButton/LongPressRecordButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LongPressRecordButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LongPressRecordButton/LongPressRecordButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LongPressRecordButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		800B3254929510233ED1C944D6971A84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56EF030A87DE802191190859BF72AF88 /* Pods-QuranSpeech.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QuranSpeech/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuranSpeech/Pods-QuranSpeech.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QuranSpeech;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382132BB6BF8CA1A911872A2062FD0D /* Debug */,
+				156284431C64CB05C59BDA0595A1E95A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E8D3FEE41D57354CB48903D592B77CA /* Build configuration list for PBXNativeTarget "LongPressRecordButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				725B8A1626B9A8F615DBFFF33C584BC5 /* Debug */,
+				4656AA4936DC27B7DB33D28F60077395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FB52075C9B75BDBDD127390F5E9C994 /* Build configuration list for PBXNativeTarget "Pods-QuranSpeech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800B3254929510233ED1C944D6971A84 /* Debug */,
+				29A98D472CAFD223905DFBD7319FB1F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
