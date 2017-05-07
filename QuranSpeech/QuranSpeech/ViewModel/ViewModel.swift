@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 import QuranSpeechEngine
 
 struct State {
@@ -15,7 +16,11 @@ struct State {
   var arrayFloatValues: [Float] = []
 }
 
-class ViewModel {
+class ViewModel: NSObject {
+  
+  static let `default` = ViewModel()
+  
+  typealias ViewModelCallback = ((State) -> Void)
   
   lazy var quranEngine: QSQuranEngine = {
     let qEngine = QSQuranEngine.default
@@ -25,14 +30,14 @@ class ViewModel {
   
   var state: State = State(result: [], speechLabelText: nil, arrayFloatValues: []) {
     didSet {
-      callback(state)
+      callbacks.forEach { $0(state) }
     }
   }
-  var callback: ((State) -> Void)
   
-  init(callback: @escaping (State) -> Void) {
-    self.callback = callback
-    self.callback(state)
+  fileprivate var callbacks: [ViewModelCallback] = []
+  
+  func register(callback: @escaping ViewModelCallback) {
+    self.callbacks.append(callback)
   }
   
   func startSpeechRecorgnition() {
@@ -50,6 +55,25 @@ class ViewModel {
     quranEngine.stopRecording()
   }
   
+  
+  func excuteSearch(with text: String?) {
+    quranEngine.search(for: text)
+  }
+  
+}
+
+extension ViewModel: UITableViewDataSource {
+  
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return state.result.count
+  }
+  
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! AyahTableViewCell
+    cell.config(state.result[indexPath.row])
+    return cell
+  }
 }
 
 // MARK: - QSQuranEngineDelegate
@@ -60,7 +84,6 @@ extension ViewModel: QSQuranEngineDelegate {
       self.state.speechLabelText = text
     case .failure(_): break
     }
-    self.callback(state)
   }
   
   func manager(bufferRecognitionResponse response: QSResult<[Float]>) {
@@ -69,7 +92,6 @@ extension ViewModel: QSQuranEngineDelegate {
       self.state.arrayFloatValues = result
     case .failure(_): break
     }
-    self.callback(state)
   }
   
   func manager(fetcherResponse response: QSResult<[QSAyah]>) {
@@ -78,6 +100,5 @@ extension ViewModel: QSQuranEngineDelegate {
       self.state.result = result
     case .failure(_): break
     }
-    self.callback(state)
   }
 }

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double LongPressRecordButtonVersionNumber;
-FOUNDATION_EXPORT const unsigned char LongPressRecordButtonVersionString[];
+FOUNDATION_EXPORT double BubbleTransitionVersionNumber;
+FOUNDATION_EXPORT const unsigned char BubbleTransitionVersionString[];
 

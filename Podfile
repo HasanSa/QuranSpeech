@@ -9,7 +9,7 @@ xcodeproj 'QuranSpeech/QuranSpeech.xcodeproj'
 #end
  
 def ui_pods
-   pod 'LongPressRecordButton'
+   pod 'BubbleTransition', '~> 2.0.0'
 end
  
 #target 'Controllers' do

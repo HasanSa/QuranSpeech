@@ -1,12 +1,12 @@
 PODS:
-  - LongPressRecordButton (1.5.0)
+  - BubbleTransition (2.0.2)
 
 DEPENDENCIES:
-  - LongPressRecordButton
+  - BubbleTransition (~> 2.0.0)
 
 SPEC CHECKSUMS:
-  LongPressRecordButton: 5db73b859708bbe86edb4e10f1a1eea9a6d9adb7
+  BubbleTransition: 7d98ed7d56f0940e83f350a98103ad473491c769
 
-PODFILE CHECKSUM: 44b8b08e2d75e2108447fba00b99f2fddd44ac2e
+PODFILE CHECKSUM: 86a3b751b85ae24e42fa8066d40f54a6076a94a8
 
 COCOAPODS: 1.2.0

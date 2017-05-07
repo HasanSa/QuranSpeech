@@ -7,76 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B828D4535C1E4D7F4C8C9B89F694816 /* Pods-QuranSpeech-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC378F782E35B5B109388D0C80CAEED2 /* Pods-QuranSpeech-dummy.m */; };
-		0E2F66A14A4C428C9611F16AB27F45BB /* LongPressRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2326B881A1AF1B4AC0D3C9C746EAB91 /* LongPressRecordButton.swift */; };
-		2266E1D364E54ECACCEAA2AA01F4E84E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		2CC00862DF769FE01BD847D19AE80D31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		7C24CDFD8388D96EED81B3DC22D0E810 /* LongPressRecordButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C317BDD2D571B6033AB0A81C350601 /* LongPressRecordButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		881B3075E9208FA3CDED78611D23515C /* LongPressRecordButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 075EC7D4706340FB3E3C8FC5816C442E /* LongPressRecordButton-dummy.m */; };
-		DFA25BB3FAD58B205FB96F27D0DC4B85 /* Pods-QuranSpeech-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82EB6E8B1ED04C27A13D06F410E3A824 /* Pods-QuranSpeech-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		048B6AD6154DCD9425D0628D4BB332D2 /* BubbleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FBA6A6825FF84D37D34288EF083FA3 /* BubbleTransition.swift */; };
+		07FF1EB3B1E1CE212855AF965B6580E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		15B92BD6A32F0D58A1079138ED72C4F1 /* BubbleTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 461B5AC8146A476E741370EEB5B8C662 /* BubbleTransition-dummy.m */; };
+		1A031FC102ECF1327B217C8B518E13B3 /* Pods-QuranSpeech-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82EB6E8B1ED04C27A13D06F410E3A824 /* Pods-QuranSpeech-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F159A8B3F6F29DAC1F4DD3BFC4892BA /* BubbleTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D3188C04332F9B763891F4674A25CD /* BubbleTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CA82227D4A5A47AE5A4D4B1077C3D89 /* Pods-QuranSpeech-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC378F782E35B5B109388D0C80CAEED2 /* Pods-QuranSpeech-dummy.m */; };
+		A2F1C30058D0CBC3907C67AFAB1A8914 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1C7CF72576D25F25BE6F3E91AED076DC /* PBXContainerItemProxy */ = {
+		2B19E3DD1D5EF31890D2D0736FD0A474 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0D55947D680CC6520303D461C7E9C48F;
-			remoteInfo = LongPressRecordButton;
+			remoteGlobalIDString = 38830187D9E171E7B43047ED06A08ADC;
+			remoteInfo = BubbleTransition;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		075EC7D4706340FB3E3C8FC5816C442E /* LongPressRecordButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LongPressRecordButton-dummy.m"; sourceTree = "<group>"; };
-		2DEC33A2048CF9BA400838A70207D1E9 /* LongPressRecordButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LongPressRecordButton.xcconfig; sourceTree = "<group>"; };
+		11FBA6A6825FF84D37D34288EF083FA3 /* BubbleTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleTransition.swift; path = Source/BubbleTransition.swift; sourceTree = "<group>"; };
+		36D3188C04332F9B763891F4674A25CD /* BubbleTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BubbleTransition-umbrella.h"; sourceTree = "<group>"; };
 		3F9EBE4C599E75DD4BBCCA15B945089A /* Pods-QuranSpeech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuranSpeech.release.xcconfig"; sourceTree = "<group>"; };
+		461B5AC8146A476E741370EEB5B8C662 /* BubbleTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BubbleTransition-dummy.m"; sourceTree = "<group>"; };
+		4640C3F983028B370E0E2F09281E5B3E /* BubbleTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BubbleTransition.modulemap; sourceTree = "<group>"; };
+		497491BAF5A9B77C3B95879764640523 /* BubbleTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BubbleTransition.xcconfig; sourceTree = "<group>"; };
 		56EF030A87DE802191190859BF72AF88 /* Pods-QuranSpeech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuranSpeech.debug.xcconfig"; sourceTree = "<group>"; };
+		5F36A05BA27248CDDA2032559EA63801 /* BubbleTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BubbleTransition-prefix.pch"; sourceTree = "<group>"; };
+		73AE5F8ADA2E846013DBE5715C34A9AC /* BubbleTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BubbleTransition.framework; path = BubbleTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		820F619A1D9041E711AFED86B3725C16 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82EB6E8B1ED04C27A13D06F410E3A824 /* Pods-QuranSpeech-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuranSpeech-umbrella.h"; sourceTree = "<group>"; };
-		892D610E4DC0A0C7C8344EE895F76FB3 /* LongPressRecordButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LongPressRecordButton-prefix.pch"; sourceTree = "<group>"; };
 		8CB58B4653266EFC80A56DBF963AC7B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A6CD116D5199646B980A0F4752E3C2A8 /* Pods-QuranSpeech-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuranSpeech-frameworks.sh"; sourceTree = "<group>"; };
 		AF6EE89DECBD3FD592A0AD8D627C335C /* Pods-QuranSpeech-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuranSpeech-acknowledgements.plist"; sourceTree = "<group>"; };
-		B32B83DBC0F998C407232312356ABB40 /* LongPressRecordButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LongPressRecordButton.modulemap; sourceTree = "<group>"; };
 		B9682C570ED37619A4A67B5228EE2A2B /* Pods-QuranSpeech.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-QuranSpeech.modulemap"; sourceTree = "<group>"; };
-		BDA39D839FBBC96C495507E515052CAE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C77E02A0B53D5FCDB112524F4FE32264 /* Pods_QuranSpeech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QuranSpeech.framework; path = "Pods-QuranSpeech.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CDDA8817677F39414008DA54C0DBE167 /* LongPressRecordButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LongPressRecordButton.framework; path = LongPressRecordButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2326B881A1AF1B4AC0D3C9C746EAB91 /* LongPressRecordButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LongPressRecordButton.swift; path = LongPressRecordButton/LongPressRecordButton.swift; sourceTree = "<group>"; };
-		E1DDF46D5949FB79AA8A3D735101AEF8 /* Pods_QuranSpeech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QuranSpeech.framework; path = "Pods-QuranSpeech.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0A159A75610019C756812505C3EF7E /* Pods-QuranSpeech-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuranSpeech-resources.sh"; sourceTree = "<group>"; };
-		F2C317BDD2D571B6033AB0A81C350601 /* LongPressRecordButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LongPressRecordButton-umbrella.h"; sourceTree = "<group>"; };
 		FBB35CD7C772D001C6023856710D3393 /* Pods-QuranSpeech-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuranSpeech-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FC378F782E35B5B109388D0C80CAEED2 /* Pods-QuranSpeech-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuranSpeech-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6D7BDCA224D954925BBB6EB832F00CFA /* Frameworks */ = {
+		D756DA14932342915B06B5A24C295CE3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CC00862DF769FE01BD847D19AE80D31 /* Foundation.framework in Frameworks */,
+				07FF1EB3B1E1CE212855AF965B6580E1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0A9F34263F2105F03C2B91B9F13310F /* Frameworks */ = {
+		F96E8F2F06EA1B068C33728111D9C2A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2266E1D364E54ECACCEAA2AA01F4E84E /* Foundation.framework in Frameworks */,
+				A2F1C30058D0CBC3907C67AFAB1A8914 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		237C2A7E58A7F9DF5985033D630F0D2C /* Products */ = {
+		24BC10960AC3D30601B218E8B4069511 /* BubbleTransition */ = {
 			isa = PBXGroup;
 			children = (
-				CDDA8817677F39414008DA54C0DBE167 /* LongPressRecordButton.framework */,
-				E1DDF46D5949FB79AA8A3D735101AEF8 /* Pods_QuranSpeech.framework */,
+				11FBA6A6825FF84D37D34288EF083FA3 /* BubbleTransition.swift */,
+				F75F236D384500594CC03F55C5F0D300 /* Support Files */,
 			);
-			name = Products;
+			name = BubbleTransition;
+			path = BubbleTransition;
 			sourceTree = "<group>";
 		};
 		5D13A893FE42AB50CE3447E0376560D9 /* Pods-QuranSpeech */ = {
@@ -105,47 +106,32 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7B668E2A905CAFB3EEEAD0E3A467CBAB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				83ABA48103C23C346A0ACC93A2D33257 /* LongPressRecordButton */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				7B668E2A905CAFB3EEEAD0E3A467CBAB /* Pods */,
-				237C2A7E58A7F9DF5985033D630F0D2C /* Products */,
+				B8C17D57F982D97B0CFF768B9B68279E /* Pods */,
+				874F07C3AF019A6E14BB04DEC0CF36BE /* Products */,
 				E724BB65746F865E55192E2A12BE5BDD /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		83ABA48103C23C346A0ACC93A2D33257 /* LongPressRecordButton */ = {
+		874F07C3AF019A6E14BB04DEC0CF36BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2326B881A1AF1B4AC0D3C9C746EAB91 /* LongPressRecordButton.swift */,
-				B8D7AEA8B6A599935AF8D05EF18B6B56 /* Support Files */,
+				73AE5F8ADA2E846013DBE5715C34A9AC /* BubbleTransition.framework */,
+				C77E02A0B53D5FCDB112524F4FE32264 /* Pods_QuranSpeech.framework */,
 			);
-			name = LongPressRecordButton;
-			path = LongPressRecordButton;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		B8D7AEA8B6A599935AF8D05EF18B6B56 /* Support Files */ = {
+		B8C17D57F982D97B0CFF768B9B68279E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BDA39D839FBBC96C495507E515052CAE /* Info.plist */,
-				B32B83DBC0F998C407232312356ABB40 /* LongPressRecordButton.modulemap */,
-				2DEC33A2048CF9BA400838A70207D1E9 /* LongPressRecordButton.xcconfig */,
-				075EC7D4706340FB3E3C8FC5816C442E /* LongPressRecordButton-dummy.m */,
-				892D610E4DC0A0C7C8344EE895F76FB3 /* LongPressRecordButton-prefix.pch */,
-				F2C317BDD2D571B6033AB0A81C350601 /* LongPressRecordButton-umbrella.h */,
+				24BC10960AC3D30601B218E8B4069511 /* BubbleTransition */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/LongPressRecordButton";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -164,61 +150,75 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		F75F236D384500594CC03F55C5F0D300 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4640C3F983028B370E0E2F09281E5B3E /* BubbleTransition.modulemap */,
+				497491BAF5A9B77C3B95879764640523 /* BubbleTransition.xcconfig */,
+				461B5AC8146A476E741370EEB5B8C662 /* BubbleTransition-dummy.m */,
+				5F36A05BA27248CDDA2032559EA63801 /* BubbleTransition-prefix.pch */,
+				36D3188C04332F9B763891F4674A25CD /* BubbleTransition-umbrella.h */,
+				820F619A1D9041E711AFED86B3725C16 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BubbleTransition";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		15904936BA4360E8B926FEFC92037626 /* Headers */ = {
+		04333389C8450AA486FA870E0F4C6D90 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFA25BB3FAD58B205FB96F27D0DC4B85 /* Pods-QuranSpeech-umbrella.h in Headers */,
+				3F159A8B3F6F29DAC1F4DD3BFC4892BA /* BubbleTransition-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7823171D3E9E57EC20756DC6BE1A416A /* Headers */ = {
+		E50C4D14879D3B0C9AE76C4F5312B7CE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C24CDFD8388D96EED81B3DC22D0E810 /* LongPressRecordButton-umbrella.h in Headers */,
+				1A031FC102ECF1327B217C8B518E13B3 /* Pods-QuranSpeech-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0D55947D680CC6520303D461C7E9C48F /* LongPressRecordButton */ = {
+		0EC858DB60EAAC8AEF8CA7FDA3308C27 /* Pods-QuranSpeech */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E8D3FEE41D57354CB48903D592B77CA /* Build configuration list for PBXNativeTarget "LongPressRecordButton" */;
+			buildConfigurationList = 7171889C33029BC9E30B34718DF36E11 /* Build configuration list for PBXNativeTarget "Pods-QuranSpeech" */;
 			buildPhases = (
-				9AF1D0817B3485A8792D68004150848A /* Sources */,
-				6D7BDCA224D954925BBB6EB832F00CFA /* Frameworks */,
-				7823171D3E9E57EC20756DC6BE1A416A /* Headers */,
+				A18368B80DABAD27DBAB337584005B0E /* Sources */,
+				F96E8F2F06EA1B068C33728111D9C2A9 /* Frameworks */,
+				E50C4D14879D3B0C9AE76C4F5312B7CE /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = LongPressRecordButton;
-			productName = LongPressRecordButton;
-			productReference = CDDA8817677F39414008DA54C0DBE167 /* LongPressRecordButton.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BDFC6F446F202CED878EB5CE9B35761C /* Pods-QuranSpeech */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7FB52075C9B75BDBDD127390F5E9C994 /* Build configuration list for PBXNativeTarget "Pods-QuranSpeech" */;
-			buildPhases = (
-				17E1E37D21ACBAE0917152AA84D1AE44 /* Sources */,
-				F0A9F34263F2105F03C2B91B9F13310F /* Frameworks */,
-				15904936BA4360E8B926FEFC92037626 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				79909D8828C33C9BDFAAE6161B9D91B0 /* PBXTargetDependency */,
+				370989A94F40A74DC2674B4E16BAB26C /* PBXTargetDependency */,
 			);
 			name = "Pods-QuranSpeech";
 			productName = "Pods-QuranSpeech";
-			productReference = E1DDF46D5949FB79AA8A3D735101AEF8 /* Pods_QuranSpeech.framework */;
+			productReference = C77E02A0B53D5FCDB112524F4FE32264 /* Pods_QuranSpeech.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		38830187D9E171E7B43047ED06A08ADC /* BubbleTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80A1B16222697C3079DBB028B38F7DBE /* Build configuration list for PBXNativeTarget "BubbleTransition" */;
+			buildPhases = (
+				DC1D173450EDD70117FFCBCB61B9624E /* Sources */,
+				D756DA14932342915B06B5A24C295CE3 /* Frameworks */,
+				04333389C8450AA486FA870E0F4C6D90 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BubbleTransition;
+			productName = BubbleTransition;
+			productReference = 73AE5F8ADA2E846013DBE5715C34A9AC /* BubbleTransition.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -238,42 +238,42 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 237C2A7E58A7F9DF5985033D630F0D2C /* Products */;
+			productRefGroup = 874F07C3AF019A6E14BB04DEC0CF36BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0D55947D680CC6520303D461C7E9C48F /* LongPressRecordButton */,
-				BDFC6F446F202CED878EB5CE9B35761C /* Pods-QuranSpeech */,
+				38830187D9E171E7B43047ED06A08ADC /* BubbleTransition */,
+				0EC858DB60EAAC8AEF8CA7FDA3308C27 /* Pods-QuranSpeech */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		17E1E37D21ACBAE0917152AA84D1AE44 /* Sources */ = {
+		A18368B80DABAD27DBAB337584005B0E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B828D4535C1E4D7F4C8C9B89F694816 /* Pods-QuranSpeech-dummy.m in Sources */,
+				9CA82227D4A5A47AE5A4D4B1077C3D89 /* Pods-QuranSpeech-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9AF1D0817B3485A8792D68004150848A /* Sources */ = {
+		DC1D173450EDD70117FFCBCB61B9624E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				881B3075E9208FA3CDED78611D23515C /* LongPressRecordButton-dummy.m in Sources */,
-				0E2F66A14A4C428C9611F16AB27F45BB /* LongPressRecordButton.swift in Sources */,
+				15B92BD6A32F0D58A1079138ED72C4F1 /* BubbleTransition-dummy.m in Sources */,
+				048B6AD6154DCD9425D0628D4BB332D2 /* BubbleTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		79909D8828C33C9BDFAAE6161B9D91B0 /* PBXTargetDependency */ = {
+		370989A94F40A74DC2674B4E16BAB26C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = LongPressRecordButton;
-			target = 0D55947D680CC6520303D461C7E9C48F /* LongPressRecordButton */;
-			targetProxy = 1C7CF72576D25F25BE6F3E91AED076DC /* PBXContainerItemProxy */;
+			name = BubbleTransition;
+			target = 38830187D9E171E7B43047ED06A08ADC /* BubbleTransition */;
+			targetProxy = 2B19E3DD1D5EF31890D2D0736FD0A474 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -318,7 +318,7 @@
 			};
 			name = Release;
 		};
-		29A98D472CAFD223905DFBD7319FB1F0 /* Release */ = {
+		1F313B277B6EEFFD962C091C32781D11 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3F9EBE4C599E75DD4BBCCA15B945089A /* Pods-QuranSpeech.release.xcconfig */;
 			buildSettings = {
@@ -353,72 +353,7 @@
 			};
 			name = Release;
 		};
-		4656AA4936DC27B7DB33D28F60077395 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DEC33A2048CF9BA400838A70207D1E9 /* LongPressRecordButton.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LongPressRecordButton/LongPressRecordButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LongPressRecordButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LongPressRecordButton/LongPressRecordButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = LongPressRecordButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		725B8A1626B9A8F615DBFFF33C584BC5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DEC33A2048CF9BA400838A70207D1E9 /* LongPressRecordButton.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LongPressRecordButton/LongPressRecordButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LongPressRecordButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LongPressRecordButton/LongPressRecordButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = LongPressRecordButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		800B3254929510233ED1C944D6971A84 /* Debug */ = {
+		4C195B4EB5680F309EA5849B77FF59DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 56EF030A87DE802191190859BF72AF88 /* Pods-QuranSpeech.debug.xcconfig */;
 			buildSettings = {
@@ -448,6 +383,71 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6DEC4975496651C239470289C8EEC7E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 497491BAF5A9B77C3B95879764640523 /* BubbleTransition.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BubbleTransition/BubbleTransition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BubbleTransition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BubbleTransition/BubbleTransition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BubbleTransition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A0DACEB93C05D9D35989258B7DF17E79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 497491BAF5A9B77C3B95879764640523 /* BubbleTransition.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BubbleTransition/BubbleTransition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BubbleTransition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BubbleTransition/BubbleTransition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BubbleTransition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -510,20 +510,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E8D3FEE41D57354CB48903D592B77CA /* Build configuration list for PBXNativeTarget "LongPressRecordButton" */ = {
+		7171889C33029BC9E30B34718DF36E11 /* Build configuration list for PBXNativeTarget "Pods-QuranSpeech" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B8A1626B9A8F615DBFFF33C584BC5 /* Debug */,
-				4656AA4936DC27B7DB33D28F60077395 /* Release */,
+				4C195B4EB5680F309EA5849B77FF59DD /* Debug */,
+				1F313B277B6EEFFD962C091C32781D11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7FB52075C9B75BDBDD127390F5E9C994 /* Build configuration list for PBXNativeTarget "Pods-QuranSpeech" */ = {
+		80A1B16222697C3079DBB028B38F7DBE /* Build configuration list for PBXNativeTarget "BubbleTransition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				800B3254929510233ED1C944D6971A84 /* Debug */,
-				29A98D472CAFD223905DFBD7319FB1F0 /* Release */,
+				A0DACEB93C05D9D35989258B7DF17E79 /* Debug */,
+				6DEC4975496651C239470289C8EEC7E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

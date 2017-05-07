@@ -23,12 +23,6 @@ final public class QSQuranEngine {
     speechMgr.delegate = self
     return speechMgr
   }()
-  
-  
-//  quranEngine.requestSpeechAuthorization() { authorized in
-//  // print("Speech Authorization isAuthorized - \(authorized)")
-//  }
-  
 }
 
 // MARK:- Private
@@ -87,6 +81,22 @@ public extension QSQuranEngine {
   public func stopRecording() {
     speechManager.stopRecording()
   }
+  
+  public func search(for text: String?) {
+    if let speechText = text {
+      guard !speechText.characters.isEmpty else {
+        return
+      }
+      
+      guard let generatedResource = generatedSpeechResource(speech: speechText) else {
+        return
+      }
+      QSQueue.background.async { [weak self] in
+        self?.excute(generatedResource)
+      }
+    }
+  }
+  
 }
 
 // MARK:- QSSpeechManagerDelegate
@@ -95,17 +105,6 @@ extension QSQuranEngine: QSSpeechManagerDelegate {
   func manager(speechRecognitionResponse response: QSResult<String>) {
     QSQueue.main.async {
       self.delegate?.manager(speechRecognitionResponse: response)
-    }
-    
-    if let speech = response.value {
-      guard !speech.characters.isEmpty else {
-        return
-      }
-      
-      guard let generatedResource = generatedSpeechResource(speech: speech) else {
-        return
-      }
-      excute(generatedResource)
     }
   }
   

@@ -21,7 +21,7 @@ class QSSpeechManager {
   fileprivate let speechRecognizer: SFSpeechRecognizer? = SFSpeechRecognizer(locale: Locale(identifier: "ar"))
   fileprivate let request = SFSpeechAudioBufferRecognitionRequest()
   fileprivate var recognitionTask: SFSpeechRecognitionTask?
-  
+  fileprivate var isRecording = false
   var status: Bool {
     return SFSpeechRecognizer.authorizationStatus() == .authorized
   }
@@ -92,6 +92,10 @@ extension QSSpeechManager {
   }
   
   func startRecording() {
+    guard !isRecording else {
+      return
+    }
+    isRecording = true
     // Setup audio engine and speech recognizer
     setupAudioEngine()
     
@@ -103,8 +107,13 @@ extension QSSpeechManager {
   }
   
   func stopRecording() {
+    guard isRecording else {
+      return
+    }
+    isRecording = false
     // stop recording
     stopAudioEngine()
+
   }
 }
 
