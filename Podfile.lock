@@ -1,12 +1,15 @@
 PODS:
   - BubbleTransition (2.0.2)
+  - SwiftSiriWaveformView (2.1.0)
 
 DEPENDENCIES:
   - BubbleTransition (~> 2.0.0)
+  - SwiftSiriWaveformView
 
 SPEC CHECKSUMS:
   BubbleTransition: 7d98ed7d56f0940e83f350a98103ad473491c769
+  SwiftSiriWaveformView: 240c8b41d0350a97b0a5de1ee3f3ab5255496580
 
-PODFILE CHECKSUM: 86a3b751b85ae24e42fa8066d40f54a6076a94a8
+PODFILE CHECKSUM: 4e09d3c386cd016daf51fdcae7ce7f2c7abd30a9
 
 COCOAPODS: 1.2.0

@@ -8,19 +8,25 @@
 
 import Foundation
 
+public typealias QSQuranEngineSpeechUpdateHandler = ((QSResult<String>?, QSResult<Float>?) -> ())
+public typealias QSQuranEngineResultsHandler = ((QSResult<[QSAyah]>?) -> ())
+
 final public class QSQuranEngine {
   
   public static let `default` = QSQuranEngine()
   
-  public weak var delegate: QSQuranEngineDelegate?
-  
-  public var speechRecognitionAuthorized: Bool {
-    return speechManager.status
+  public var isRecording: Bool {
+    return QSSpeechManager.default.isRecording
   }
+  
+  public var resultsHandler: QSQuranEngineResultsHandler?
+  
+//  public var speechRecognitionAuthorized: Bool {
+//    return speechManager.status
+//  }
   
   lazy var speechManager: QSSpeechManager =  {
     let speechMgr = QSSpeechManager.default
-    speechMgr.delegate = self
     return speechMgr
   }()
 }
@@ -28,35 +34,79 @@ final public class QSQuranEngine {
 // MARK:- Private
 extension QSQuranEngine {
   
-  func excute(_ resourceRequest: QSResource<[QSAyah]>) {
-    QSNetworkService.excute(resource: resourceRequest) { ayahs in
-      let response = QSResult<[QSAyah]>.success(ayahs ?? [])
-      QSQueue.main.async {
-        self.delegate?.manager(fetcherResponse: response)
-      }
-    }
-  }
-  
-  func generatedSpeechResource(speech: String) -> QSResource<[QSAyah]>? {
+  func generateSpeechResource(speech: String) -> QSResource<[QSAyah]>? {
     
     let speechRequest = SpeechRequest(parameter: speech.urlEscaped)
-    
-    let resourceRequest = QSResource<[QSAyah]>(url: speechRequest.targetURL) { json in
+    let request = URLRequest(url: speechRequest.targetURL)
+    let resourceRequest = QSResource<[QSAyah]>(request: request) { json in
       
       guard let dict = json as? JSONDictionary else {
         return nil
       }
       
-      guard let ayahs = dict["results"] as? [JSONDictionary] else {
+      guard let data = dict["data"] as? JSONDictionary else {
         return nil
       }
       
-      return ayahs.flatMap{ ayaJSON in
+      guard let matches = data["matches"] as? [JSONDictionary] else {
+        return nil
+      }
+      
+      return matches.flatMap{ ayaJSON in
         return QSAyah(json: ayaJSON)
       }
     }
     
     return resourceRequest
+  }
+  
+  func generateSpeechText(data: Data) -> QSResource<String>? {
+    
+    let voiceRequest = VoiceRecognitionRequest(audioData: data)
+    guard let request = voiceRequest.request as URLRequest? else {
+      return nil
+    }
+    let resourceRequest = QSResource<String>(request: request){ json in
+      
+      guard let dict = json as? JSONDictionary else {
+        return nil
+      }
+      
+      if let results = dict["results"] as? [JSONDictionary],
+        let data = results.first,
+        let alternatives = data["alternatives"] as? [JSONDictionary],
+        let alternative = alternatives.first,
+        let transcript = alternative["transcript"] as? String {
+        return transcript
+      }
+    
+      return nil
+    }
+    
+    return resourceRequest
+  }
+  
+  func search(for text: String?, completion: QSQuranEngineResultsHandler?) {
+    if let speechText = text {
+      guard !speechText.characters.isEmpty else {
+        return
+      }
+      
+      guard let completion = completion else {
+        return
+      }
+      
+      guard let resourceRequest = generateSpeechResource(speech: speechText) else {
+        return
+      }
+      QSQueue.background.async { _ in
+        QSNetworkService.excute(resource: resourceRequest) { ayahs in
+          QSQueue.main.async {
+            completion(QSResult<[QSAyah]>.success(ayahs ?? []))
+          }
+        }
+      }
+    }
   }
 }
 
@@ -69,49 +119,43 @@ public extension QSQuranEngine {
     }
   }
   
-  public func startRecording() {
+  public func startRecording(completion: QSQuranEngineSpeechUpdateHandler?) {
     
-    guard speechRecognitionAuthorized else {
-      print("make sure you called requestAuthorization first, make sure that you added \n 'Privacy - Speech Recognition Usage Description' and 'Privacy - Microphone Usage Description' keys at info.plist")
+    guard let completion = completion else {
       return
     }
-    speechManager.startRecording()
+    
+    speechManager.startRecording { [weak self] (speechResponse, metersResponse) in
+      if let speechResponse = speechResponse {
+        switch speechResponse {
+        case .success(let data):
+          guard let resourceRequest = self?.generateSpeechText(data: data as! Data) else {
+            return
+          }
+          QSQueue.background.async {
+            QSNetworkService.excute(resource: resourceRequest) { result in
+              QSQueue.main.async {
+                completion(QSResult<String>.success(result ?? ""), nil)
+                self?.search(for: result, completion: self?.resultsHandler)
+              }
+            }
+          }
+        case .failure(_): break
+        }
+      }
+      if let metersResponse = metersResponse {
+        completion(nil, metersResponse)
+      }
+    }
+    
+//    guard speechRecognitionAuthorized else {
+//      print("make sure you called requestAuthorization first, make sure that you added \n 'Privacy - Speech Recognition Usage Description' and 'Privacy - Microphone Usage Description' keys at info.plist")
+//      return
+//    }
   }
   
   public func stopRecording() {
     speechManager.stopRecording()
-  }
-  
-  public func search(for text: String?) {
-    if let speechText = text {
-      guard !speechText.characters.isEmpty else {
-        return
-      }
-      
-      guard let generatedResource = generatedSpeechResource(speech: speechText) else {
-        return
-      }
-      QSQueue.background.async { [weak self] in
-        self?.excute(generatedResource)
-      }
-    }
-  }
-  
-}
-
-// MARK:- QSSpeechManagerDelegate
-extension QSQuranEngine: QSSpeechManagerDelegate {
-  
-  func manager(speechRecognitionResponse response: QSResult<String>) {
-    QSQueue.main.async {
-      self.delegate?.manager(speechRecognitionResponse: response)
-    }
-  }
-  
-  func manager(bufferRecognitionResponse response: QSResult<[Float]>) {
-    QSQueue.main.async {
-      self.delegate?.manager(bufferRecognitionResponse: response)
-    }
   }
   
 }
