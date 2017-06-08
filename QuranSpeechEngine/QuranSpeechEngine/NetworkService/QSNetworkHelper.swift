@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum QSRequestMethod {
   case search
@@ -27,7 +28,7 @@ struct SpeechRequest: QSRequest {
   var method: QSRequestMethod? = .search
   
   var path: String {
-    return "https://api.alquran.cloud/search/"
+    return "https://www.alfanous.org/jos2?action=search&query="
   }
   
   var parameter: String?
@@ -35,7 +36,6 @@ struct SpeechRequest: QSRequest {
   var targetURL: URL {
     var urlPath = path
     urlPath += parameter ?? ""
-    urlPath += "/all/quran-simple-clean"
     return URL(string: urlPath)!
   }
   
@@ -94,6 +94,21 @@ extension String {
   
   var utf8Encoded: Data {
     return cast(self.data(using: .utf8))
+  }
+  
+  var html2AttributedString: NSAttributedString? {
+    do {
+      return try NSAttributedString(data: Data(utf8),
+                                    options: [.documentType: NSAttributedString.DocumentType.html,
+                                              .characterEncoding: String.Encoding.utf8.rawValue],
+                                    documentAttributes: nil)
+    } catch {
+      print("error:", error)
+      return  nil
+    }
+  }
+  var html2String: String {
+    return html2AttributedString?.string ?? ""
   }
 }
 

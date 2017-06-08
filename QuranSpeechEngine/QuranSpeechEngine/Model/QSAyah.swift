@@ -100,17 +100,19 @@ extension QSAyah {
 
 extension QSAyah  {
   init?(json: JSONDictionary) {
-    guard let surah = json["surah"] as? JSONDictionary,
-      let verse = json["numberInSurah"] as? Int else {
+    guard let identifier = json["identifier"] as? JSONDictionary,
+      let suraId = identifier["sura_id"] as? Int,
+      let ayaId = identifier["aya_id"] as? Int else {
         return nil
     }
     
-    guard let chapter = surah["number"] as? Int else {
-      return nil
+    guard let aya = json["aya"] as? JSONDictionary,
+      let text = aya["text"] as? String else {
+        return nil
     }
     
-    self.sura = chapter
-    self.ayah = verse
-    self.text = json["text"] as? String
+    self.sura = suraId
+    self.ayah = ayaId
+    self.text = text
   }
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 private let reuseIdentifier = "Cell"
-let kCellHeight: CGFloat = 120.0
+let kCellHeight: CGFloat = 100.0
 
 class ResultsViewController: UIViewController {
   
@@ -25,9 +25,7 @@ class ResultsViewController: UIViewController {
     super.viewDidLoad()
     
     viewModel = ResultsTableViewModel(callback: { [weak self] state in
-      if !state.results.isEmpty {
         self?.tableView.reloadData()
-      }
     })
     
     self.tableView.rowHeight = UITableViewAutomaticDimension

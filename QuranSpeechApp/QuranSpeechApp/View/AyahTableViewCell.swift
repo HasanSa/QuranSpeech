@@ -13,7 +13,7 @@ class AyahTableViewCell: UITableViewCell {
   
   @IBOutlet weak var foregroundView: UIView! {
     didSet {
-      foregroundView.layer.cornerRadius = 10
+      foregroundView.layer.cornerRadius = 5
       foregroundView.layer.masksToBounds = true
       foregroundView.layer.borderColor = UIColor.lightGray.cgColor
       foregroundView.layer.borderWidth = 0.25
@@ -47,8 +47,8 @@ class AyahTableViewCell: UITableViewCell {
     nameLabel.text = QSQuran.nameForSura(ayah.sura)
     numberLabel.text = "\(ayah.ayah)"
     //
-    self.contentView.setNeedsLayout()
-    self.contentView.layoutIfNeeded()
+//    self.contentView.setNeedsLayout()
+//    self.contentView.layoutIfNeeded()
   }
   
 }

@@ -22,13 +22,11 @@ class RecorderViewController: UIViewController {
   @IBOutlet weak var waveView: SwiftSiriWaveformView!
   
   fileprivate var viewModel: SpeechRecognizerViewModel?
-  fileprivate var change:CGFloat = 0.001
+  fileprivate var change:CGFloat = 0.01
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.waveView.density = 1.0
-    
-    
+
     viewModel = SpeechRecognizerViewModel(callback: { [weak self] state in
       guard let this = self else {
         return
@@ -37,15 +35,15 @@ class RecorderViewController: UIViewController {
       this.textLabel.text = state.speechLabelText
       
       guard this.viewModel!.isRecoding else {
-        this.waveView.amplitude = 0
         return
       }
+    
       
       if this.waveView.amplitude <= this.waveView.idleAmplitude || this.waveView.amplitude > 1.0 {
         this.change *= -1.0
       }
       
-      this.waveView.amplitude += (CGFloat(state.metersValue) * this.change)
+      this.waveView.amplitude = (CGFloat(state.metersValue) * this.change)
     })
   }
   

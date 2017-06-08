@@ -18,7 +18,7 @@ enum State {
   
   mutating func muliplier() -> CGFloat {
     update()
-    return (self == .browsing) ? 0.25 : 1.025
+    return (self == .browsing) ? 0.25 : 1.005
   }
 }
 
@@ -44,7 +44,6 @@ class MainViewController: UIViewController {
     super.viewDidLoad()
     updateViewHeightConstraint()
     addChildrenViewController()
-    
   }
   
   override func didReceiveMemoryWarning() {

@@ -399,7 +399,7 @@ public extension QSQuran {
 
 public extension QSQuran {
   static func nameForSura(_ sura: Int, withPrefix: Bool = false) -> String {
-    let klass: AnyClass = object_getClass(self)
+    let klass: AnyClass = object_getClass(self)!
     let bundle = Bundle(for: klass)
     let path = "\(bundle.resourcePath!)/QuranBundle.bundle"
     guard let b = Bundle(path: path) else {

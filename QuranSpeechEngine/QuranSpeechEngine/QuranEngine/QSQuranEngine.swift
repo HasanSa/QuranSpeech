@@ -44,16 +44,19 @@ extension QSQuranEngine {
         return nil
       }
       
-      guard let data = dict["data"] as? JSONDictionary else {
+      guard let data = dict["search"] as? JSONDictionary else {
         return nil
       }
       
-      guard let matches = data["matches"] as? [JSONDictionary] else {
+      guard let ayas = data["ayas"] as? JSONDictionary else {
         return nil
       }
       
-      return matches.flatMap{ ayaJSON in
-        return QSAyah(json: ayaJSON)
+      return ayas.keys.flatMap{ key in
+        if let ayahJSON = ayas[key] as? JSONDictionary {
+          return QSAyah(json: ayahJSON)
+        }
+        return nil
       }
     }
     
@@ -99,7 +102,11 @@ extension QSQuranEngine {
       guard let resourceRequest = generateSpeechResource(speech: speechText) else {
         return
       }
-      QSQueue.background.async { _ in
+      QSQueue.main.async {
+        self.resultsHandler?(QSResult<[QSAyah]>.success([]))
+      }
+      
+      QSQueue.background.async {
         QSNetworkService.excute(resource: resourceRequest) { ayahs in
           QSQueue.main.async {
             completion(QSResult<[QSAyah]>.success(ayahs ?? []))
