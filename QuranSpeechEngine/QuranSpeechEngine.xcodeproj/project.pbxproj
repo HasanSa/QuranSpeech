@@ -7,26 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB4890341EE2D68B00B55CBA /* QSAyah.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4890271EE2D68B00B55CBA /* QSAyah.swift */; };
+		BB4890351EE2D68B00B55CBA /* QSJuz.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4890281EE2D68B00B55CBA /* QSJuz.swift */; };
+		BB4890361EE2D68B00B55CBA /* QSQuarter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4890291EE2D68B00B55CBA /* QSQuarter.swift */; };
+		BB4890371EE2D68B00B55CBA /* QSQuran.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB48902A1EE2D68B00B55CBA /* QSQuran.swift */; };
+		BB4890381EE2D68B00B55CBA /* QSQuranPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB48902B1EE2D68B00B55CBA /* QSQuranPage.swift */; };
+		BB4890391EE2D68B00B55CBA /* QSQuranPageReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB48902C1EE2D68B00B55CBA /* QSQuranPageReference.swift */; };
+		BB48903A1EE2D68B00B55CBA /* QSSura.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB48902D1EE2D68B00B55CBA /* QSSura.swift */; };
+		BB48903B1EE2D68B00B55CBA /* QSVerseRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB48902E1EE2D68B00B55CBA /* QSVerseRange.swift */; };
+		BB48903C1EE2D68B00B55CBA /* QSQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4890301EE2D68B00B55CBA /* QSQueue.swift */; };
+		BB48903D1EE2D68B00B55CBA /* QSQuranError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4890311EE2D68B00B55CBA /* QSQuranError.swift */; };
+		BB48903E1EE2D68B00B55CBA /* QSQuranUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4890321EE2D68B00B55CBA /* QSQuranUtilities.swift */; };
+		BB48903F1EE2D68B00B55CBA /* QSResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4890331EE2D68B00B55CBA /* QSResult.swift */; };
+		BB4890641EE2DD2800B55CBA /* QuranBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BB4890631EE2DD2800B55CBA /* QuranBundle.bundle */; };
 		BBD483A01EB55DCB00B0D254 /* QuranSpeechEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD483961EB55DCB00B0D254 /* QuranSpeechEngine.framework */; };
 		BBD483A51EB55DCB00B0D254 /* QuranSpeechEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD483A41EB55DCB00B0D254 /* QuranSpeechEngineTests.swift */; };
 		BBD483B21EB55E3400B0D254 /* QSSpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD483B11EB55E3400B0D254 /* QSSpeechManager.swift */; };
-		BBD483C51EB55E4500B0D254 /* QSAyah.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD483B51EB55E4500B0D254 /* QSAyah.swift */; };
-		BBD483C61EB55E4500B0D254 /* QSJuz.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD483B61EB55E4500B0D254 /* QSJuz.swift */; };
-		BBD483C71EB55E4500B0D254 /* QSQuarter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD483B71EB55E4500B0D254 /* QSQuarter.swift */; };
-		BBD483C81EB55E4500B0D254 /* QSQuran.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD483B81EB55E4500B0D254 /* QSQuran.swift */; };
-		BBD483C91EB55E4500B0D254 /* QSQuranPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD483B91EB55E4500B0D254 /* QSQuranPage.swift */; };
-		BBD483CA1EB55E4500B0D254 /* QSQuranPageReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD483BA1EB55E4500B0D254 /* QSQuranPageReference.swift */; };
-		BBD483CB1EB55E4500B0D254 /* QSSura.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD483BB1EB55E4500B0D254 /* QSSura.swift */; };
-		BBD483CC1EB55E4500B0D254 /* QSVerseRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD483BC1EB55E4500B0D254 /* QSVerseRange.swift */; };
 		BBD483CD1EB55E4500B0D254 /* QSQuranEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD483BD1EB55E4500B0D254 /* QSQuranEngine.swift */; };
-		BBD483CE1EB55E4500B0D254 /* QSQuranManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD483BE1EB55E4500B0D254 /* QSQuranManagerDelegate.swift */; };
-		BBD483CF1EB55E4500B0D254 /* QSQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD483C01EB55E4500B0D254 /* QSQueue.swift */; };
-		BBD483D01EB55E4500B0D254 /* QSQuranError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD483C11EB55E4500B0D254 /* QSQuranError.swift */; };
-		BBD483D11EB55E4500B0D254 /* QSQuranUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD483C21EB55E4500B0D254 /* QSQuranUtilities.swift */; };
-		BBD483D21EB55E4500B0D254 /* QSResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD483C31EB55E4500B0D254 /* QSResult.swift */; };
 		BBD483D71EB55E4B00B0D254 /* QSNetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD483D51EB55E4B00B0D254 /* QSNetworkHelper.swift */; };
 		BBD483D81EB55E4B00B0D254 /* QSNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD483D61EB55E4B00B0D254 /* QSNetworkService.swift */; };
-		BBD483E71EB5606C00B0D254 /* QuranBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BBD483E61EB5606C00B0D254 /* QuranBundle.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,29 +39,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB4890271EE2D68B00B55CBA /* QSAyah.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSAyah.swift; sourceTree = "<group>"; };
+		BB4890281EE2D68B00B55CBA /* QSJuz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSJuz.swift; sourceTree = "<group>"; };
+		BB4890291EE2D68B00B55CBA /* QSQuarter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSQuarter.swift; sourceTree = "<group>"; };
+		BB48902A1EE2D68B00B55CBA /* QSQuran.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSQuran.swift; sourceTree = "<group>"; };
+		BB48902B1EE2D68B00B55CBA /* QSQuranPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSQuranPage.swift; sourceTree = "<group>"; };
+		BB48902C1EE2D68B00B55CBA /* QSQuranPageReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSQuranPageReference.swift; sourceTree = "<group>"; };
+		BB48902D1EE2D68B00B55CBA /* QSSura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSSura.swift; sourceTree = "<group>"; };
+		BB48902E1EE2D68B00B55CBA /* QSVerseRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSVerseRange.swift; sourceTree = "<group>"; };
+		BB4890301EE2D68B00B55CBA /* QSQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSQueue.swift; sourceTree = "<group>"; };
+		BB4890311EE2D68B00B55CBA /* QSQuranError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSQuranError.swift; sourceTree = "<group>"; };
+		BB4890321EE2D68B00B55CBA /* QSQuranUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSQuranUtilities.swift; sourceTree = "<group>"; };
+		BB4890331EE2D68B00B55CBA /* QSResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSResult.swift; sourceTree = "<group>"; };
+		BB4890631EE2DD2800B55CBA /* QuranBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QuranBundle.bundle; sourceTree = "<group>"; };
 		BBD483961EB55DCB00B0D254 /* QuranSpeechEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuranSpeechEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD4839A1EB55DCB00B0D254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBD4839F1EB55DCB00B0D254 /* QuranSpeechEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuranSpeechEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD483A41EB55DCB00B0D254 /* QuranSpeechEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = QuranSpeechEngineTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BBD483A61EB55DCB00B0D254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBD483B11EB55E3400B0D254 /* QSSpeechManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = QSSpeechManager.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		BBD483B51EB55E4500B0D254 /* QSAyah.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSAyah.swift; sourceTree = "<group>"; };
-		BBD483B61EB55E4500B0D254 /* QSJuz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSJuz.swift; sourceTree = "<group>"; };
-		BBD483B71EB55E4500B0D254 /* QSQuarter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSQuarter.swift; sourceTree = "<group>"; };
-		BBD483B81EB55E4500B0D254 /* QSQuran.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSQuran.swift; sourceTree = "<group>"; };
-		BBD483B91EB55E4500B0D254 /* QSQuranPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSQuranPage.swift; sourceTree = "<group>"; };
-		BBD483BA1EB55E4500B0D254 /* QSQuranPageReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSQuranPageReference.swift; sourceTree = "<group>"; };
-		BBD483BB1EB55E4500B0D254 /* QSSura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSSura.swift; sourceTree = "<group>"; };
-		BBD483BC1EB55E4500B0D254 /* QSVerseRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSVerseRange.swift; sourceTree = "<group>"; };
 		BBD483BD1EB55E4500B0D254 /* QSQuranEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = QSQuranEngine.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		BBD483BE1EB55E4500B0D254 /* QSQuranManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = QSQuranManagerDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		BBD483C01EB55E4500B0D254 /* QSQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSQueue.swift; sourceTree = "<group>"; };
-		BBD483C11EB55E4500B0D254 /* QSQuranError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSQuranError.swift; sourceTree = "<group>"; };
-		BBD483C21EB55E4500B0D254 /* QSQuranUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSQuranUtilities.swift; sourceTree = "<group>"; };
-		BBD483C31EB55E4500B0D254 /* QSResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSResult.swift; sourceTree = "<group>"; };
 		BBD483D51EB55E4B00B0D254 /* QSNetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = QSNetworkHelper.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BBD483D61EB55E4B00B0D254 /* QSNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = QSNetworkService.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		BBD483E61EB5606C00B0D254 /* QuranBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QuranBundle.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +82,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB4890261EE2D68B00B55CBA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB4890271EE2D68B00B55CBA /* QSAyah.swift */,
+				BB4890281EE2D68B00B55CBA /* QSJuz.swift */,
+				BB4890291EE2D68B00B55CBA /* QSQuarter.swift */,
+				BB48902A1EE2D68B00B55CBA /* QSQuran.swift */,
+				BB48902B1EE2D68B00B55CBA /* QSQuranPage.swift */,
+				BB48902C1EE2D68B00B55CBA /* QSQuranPageReference.swift */,
+				BB48902D1EE2D68B00B55CBA /* QSSura.swift */,
+				BB48902E1EE2D68B00B55CBA /* QSVerseRange.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB48902F1EE2D68B00B55CBA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BB4890301EE2D68B00B55CBA /* QSQueue.swift */,
+				BB4890311EE2D68B00B55CBA /* QSQuranError.swift */,
+				BB4890321EE2D68B00B55CBA /* QSQuranUtilities.swift */,
+				BB4890331EE2D68B00B55CBA /* QSResult.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BB4890621EE2DD2800B55CBA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB4890631EE2DD2800B55CBA /* QuranBundle.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		BBD4838C1EB55DCB00B0D254 = {
 			isa = PBXGroup;
 			children = (
@@ -105,10 +137,12 @@
 		BBD483981EB55DCB00B0D254 /* QuranSpeechEngine */ = {
 			isa = PBXGroup;
 			children = (
+				BB4890261EE2D68B00B55CBA /* Model */,
+				BB48902F1EE2D68B00B55CBA /* Utilities */,
 				BBD483D41EB55E4B00B0D254 /* NetworkService */,
 				BBD483B01EB55E3400B0D254 /* SpeechManager */,
 				BBD483B31EB55E4500B0D254 /* QuranEngine */,
-				BBD483E61EB5606C00B0D254 /* QuranBundle.bundle */,
+				BB4890621EE2DD2800B55CBA /* Resources */,
 				BBD4839A1EB55DCB00B0D254 /* Info.plist */,
 			);
 			path = QuranSpeechEngine;
@@ -134,38 +168,9 @@
 		BBD483B31EB55E4500B0D254 /* QuranEngine */ = {
 			isa = PBXGroup;
 			children = (
-				BBD483B41EB55E4500B0D254 /* Model */,
-				BBD483BF1EB55E4500B0D254 /* Utilities */,
 				BBD483BD1EB55E4500B0D254 /* QSQuranEngine.swift */,
-				BBD483BE1EB55E4500B0D254 /* QSQuranManagerDelegate.swift */,
 			);
 			path = QuranEngine;
-			sourceTree = "<group>";
-		};
-		BBD483B41EB55E4500B0D254 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				BBD483B51EB55E4500B0D254 /* QSAyah.swift */,
-				BBD483B61EB55E4500B0D254 /* QSJuz.swift */,
-				BBD483B71EB55E4500B0D254 /* QSQuarter.swift */,
-				BBD483B81EB55E4500B0D254 /* QSQuran.swift */,
-				BBD483B91EB55E4500B0D254 /* QSQuranPage.swift */,
-				BBD483BA1EB55E4500B0D254 /* QSQuranPageReference.swift */,
-				BBD483BB1EB55E4500B0D254 /* QSSura.swift */,
-				BBD483BC1EB55E4500B0D254 /* QSVerseRange.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		BBD483BF1EB55E4500B0D254 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				BBD483C01EB55E4500B0D254 /* QSQueue.swift */,
-				BBD483C11EB55E4500B0D254 /* QSQuranError.swift */,
-				BBD483C21EB55E4500B0D254 /* QSQuranUtilities.swift */,
-				BBD483C31EB55E4500B0D254 /* QSResult.swift */,
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 		BBD483D41EB55E4B00B0D254 /* NetworkService */ = {
@@ -233,12 +238,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Quran Speech Team";
 				TargetAttributes = {
 					BBD483951EB55DCB00B0D254 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = A3JC2SBNCR;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					BBD4839E1EB55DCB00B0D254 = {
@@ -271,7 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBD483E71EB5606C00B0D254 /* QuranBundle.bundle in Resources */,
+				BB4890641EE2DD2800B55CBA /* QuranBundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,22 +296,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBD483D81EB55E4B00B0D254 /* QSNetworkService.swift in Sources */,
-				BBD483C91EB55E4500B0D254 /* QSQuranPage.swift in Sources */,
-				BBD483CE1EB55E4500B0D254 /* QSQuranManagerDelegate.swift in Sources */,
-				BBD483D21EB55E4500B0D254 /* QSResult.swift in Sources */,
-				BBD483C51EB55E4500B0D254 /* QSAyah.swift in Sources */,
-				BBD483C61EB55E4500B0D254 /* QSJuz.swift in Sources */,
-				BBD483C71EB55E4500B0D254 /* QSQuarter.swift in Sources */,
-				BBD483D01EB55E4500B0D254 /* QSQuranError.swift in Sources */,
+				BB4890391EE2D68B00B55CBA /* QSQuranPageReference.swift in Sources */,
+				BB4890361EE2D68B00B55CBA /* QSQuarter.swift in Sources */,
+				BB4890341EE2D68B00B55CBA /* QSAyah.swift in Sources */,
+				BB48903B1EE2D68B00B55CBA /* QSVerseRange.swift in Sources */,
 				BBD483B21EB55E3400B0D254 /* QSSpeechManager.swift in Sources */,
-				BBD483C81EB55E4500B0D254 /* QSQuran.swift in Sources */,
-				BBD483D11EB55E4500B0D254 /* QSQuranUtilities.swift in Sources */,
-				BBD483CB1EB55E4500B0D254 /* QSSura.swift in Sources */,
-				BBD483CA1EB55E4500B0D254 /* QSQuranPageReference.swift in Sources */,
-				BBD483CF1EB55E4500B0D254 /* QSQueue.swift in Sources */,
-				BBD483CC1EB55E4500B0D254 /* QSVerseRange.swift in Sources */,
+				BB48903A1EE2D68B00B55CBA /* QSSura.swift in Sources */,
+				BB48903E1EE2D68B00B55CBA /* QSQuranUtilities.swift in Sources */,
+				BB4890351EE2D68B00B55CBA /* QSJuz.swift in Sources */,
+				BB4890381EE2D68B00B55CBA /* QSQuranPage.swift in Sources */,
 				BBD483D71EB55E4B00B0D254 /* QSNetworkHelper.swift in Sources */,
+				BB48903F1EE2D68B00B55CBA /* QSResult.swift in Sources */,
+				BB48903D1EE2D68B00B55CBA /* QSQuranError.swift in Sources */,
+				BB48903C1EE2D68B00B55CBA /* QSQueue.swift in Sources */,
 				BBD483CD1EB55E4500B0D254 /* QSQuranEngine.swift in Sources */,
+				BB4890371EE2D68B00B55CBA /* QSQuran.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +343,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -346,7 +353,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -392,7 +403,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -400,7 +413,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -444,7 +461,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.HasanSa.QuranSpeechEngine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -463,7 +481,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.HasanSa.QuranSpeechEngine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

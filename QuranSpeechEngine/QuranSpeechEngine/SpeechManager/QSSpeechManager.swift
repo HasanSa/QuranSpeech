@@ -7,80 +7,121 @@
 //
 
 import Foundation
-import Speech
+import AVFoundation
 
-protocol QSSpeechManagerDelegate: class {
-  func manager(speechRecognitionResponse response: QSResult<String>)
-  func manager(bufferRecognitionResponse response: QSResult<[Float]>)
-}
+let kTimeInterval = 0.01
+let kSampleRate = 16000
+let MAX_RECORED_INTERVARL: TimeInterval = 120
+
+typealias QSSpeechResultsUpdateHandler = ((QSResult<Any>?, QSResult<Float>?) -> ())
 
 class QSSpeechManager {
   
   static let `default` = QSSpeechManager()
-  fileprivate let audioEngine = AVAudioEngine()
-  fileprivate let speechRecognizer: SFSpeechRecognizer? = SFSpeechRecognizer(locale: Locale(identifier: "ar"))
-  fileprivate let request = SFSpeechAudioBufferRecognitionRequest()
-  fileprivate var recognitionTask: SFSpeechRecognitionTask?
+  fileprivate var audioRecorder: AVAudioRecorder?
+  fileprivate var timer: Timer?
   
-  var status: Bool {
-    return SFSpeechRecognizer.authorizationStatus() == .authorized
+  fileprivate var soundFileURL: URL {
+    return getDocumentsDirectory().appendingPathComponent("audioFileName.caf")
   }
-  weak var delegate: QSSpeechManagerDelegate?
+  
+  var resultsUpdateHandler: QSSpeechResultsUpdateHandler = { _, _ in }
+  
+  lazy var recordSettings: [String: Any] = {
+    return [
+      AVEncoderBitRateKey: 16,
+      AVSampleRateKey: kSampleRate,
+      AVNumberOfChannelsKey: 1,
+      AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue    ]
+  }()
+  
+  fileprivate let audioEngine = AVAudioEngine()
+  
+  init() {
+    prepareAudioRecorder()
+  }
+  
+  var isRecording: Bool {
+    return timer != nil
+  }
+		
 }
 
 // MARK - PRIVATE
-extension QSSpeechManager {
+private extension QSSpeechManager {
   
-  func requestAuthorization(completion: @escaping ((Bool) -> Void)) {
-    SFSpeechRecognizer.requestAuthorization { status in
-      OperationQueue.main.addOperation {
-        completion(status == .authorized)
-      }
-    }
+  func getDocumentsDirectory() -> URL {
+    let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+    let documentsDirectory = paths[0]
+    return documentsDirectory
   }
   
-  func setupAudioEngine() {
-    guard let node = audioEngine.inputNode else { return }
-    let recordingFormat = node.outputFormat(forBus: 0)
-    node.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { buffer, _ in
-      self.request.append(buffer)
-      let bufferAudioChannelData = Array(UnsafeBufferPointer(start: buffer.floatChannelData?[0], count:Int(buffer.frameLength)))
-      self.delegate?.manager(bufferRecognitionResponse: QSResult<[Float]>.success(bufferAudioChannelData))
-    }
-  }
-  
-  func prepareAudioEngine() {
-    audioEngine.prepare()
+  func prepareAudioRecorder() {
+    
+    // create the session
+    let session = AVAudioSession.sharedInstance()
     
     do {
-      try audioEngine.start()
-    } catch {
-      return print(error)
-    }
-  }
-  
-  func analyzeAudio() {
-    recognitionTask = speechRecognizer?.recognitionTask(with: request, resultHandler: { result, error in
-      
-      if let result = result {
-        self.delegate?.manager(speechRecognitionResponse:
-          QSResult<String>.success(result.bestTranscription.formattedString))
-        
-      } else if let error = error {
-        self.delegate?.manager(speechRecognitionResponse:
-          QSResult<String>.failure(error))
+      // configure the session for recording and playback
+      try session.setCategory(AVAudioSessionCategoryPlayAndRecord, with: .defaultToSpeaker)
+      try session.setActive(true)
+      // create the audio recording, and assign ourselves as the delegate
+      audioRecorder = try AVAudioRecorder(url: soundFileURL, settings: recordSettings)
+      audioRecorder?.isMeteringEnabled = true
+      if audioRecorder!.prepareToRecord() {
+        print("👍")
       }
-    })
-  }
-  
-  func stopAudioEngine() {
-    audioEngine.stop()
-    if let node = audioEngine.inputNode {
-      node.removeTap(onBus: 0)
+    } catch let error {
+      print("error: \(String(describing: error.localizedDescription))")
     }
-    recognitionTask?.cancel()
   }
   
+  func recordAudio() {
+    audioRecorder?.record(forDuration: MAX_RECORED_INTERVARL)
+    timer = Timer.scheduledTimer(timeInterval: kTimeInterval, target: self, selector: #selector(self.updateVoiceMeteres), userInfo: nil, repeats: true)
+  }
+  
+  func stopAudio() {
+    if let audioRecorder = audioRecorder,
+      audioRecorder.isRecording {
+      audioRecorder.stop()
+    }
+    
+    if let timer = timer, timer.isValid {
+      self.timer?.invalidate()
+      self.timer = nil
+    }
+  }
+  
+  func processAudio() {
+    stopAudio()
+    do {
+      let audioData = try Data(contentsOf: soundFileURL)
+      self.resultsUpdateHandler(QSResult<Any>.success(audioData), nil)
+    } catch (let error) {
+      self.resultsUpdateHandler(QSResult<Any>.failure(error), nil)
+    }
+  }
+  
+  func requestAuthorization(completion: @escaping ((Bool) -> Void)) {
+    let audioSession = AVAudioSession.sharedInstance()
+    audioSession.requestRecordPermission() { allowed in
+      DispatchQueue.main.async {
+        completion(allowed)
+      }
+    }
+  }
+  
+}
+
+extension QSSpeechManager {
+  @objc func updateVoiceMeteres() {
+    if let audioRecorder = audioRecorder, audioRecorder.isRecording {
+      audioRecorder.updateMeters()
+      let volume: Float = audioRecorder.averagePower(forChannel: 0)
+      self.resultsUpdateHandler(nil, QSResult<Float>.success(-volume))
+    }
+  }
 }
 
 
@@ -88,23 +129,16 @@ extension QSSpeechManager {
 extension QSSpeechManager {
   
   func requestPermission(completion: @escaping ((Bool) -> Void)) {
-    requestAuthorization(completion: completion)
+     requestAuthorization(completion: completion)
   }
   
-  func startRecording() {
-    // Setup audio engine and speech recognizer
-    setupAudioEngine()
-    
-    // Prepare and start recording
-    prepareAudioEngine()
-    
-    // Analyze the speech
-    analyzeAudio()
+  func startRecording(completion: @escaping QSSpeechResultsUpdateHandler) {
+    self.resultsUpdateHandler = completion
+    recordAudio()
   }
   
   func stopRecording() {
-    // stop recording
-    stopAudioEngine()
+    self.processAudio()
   }
 }
 
