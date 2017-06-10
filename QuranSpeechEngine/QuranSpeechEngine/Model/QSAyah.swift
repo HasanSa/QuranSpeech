@@ -24,8 +24,9 @@ public struct QSAyah: Hashable, CustomStringConvertible {
   public let sura: Int
   public let ayah: Int
   public let text: String?
+  public var isExpanded = false
   
-  init(sura: Int, ayah: Int, text: String? = nil) {
+  public init(sura: Int, ayah: Int, text: String? = nil) {
     self.sura = sura
     self.ayah = ayah
     self.text = text
@@ -33,6 +34,10 @@ public struct QSAyah: Hashable, CustomStringConvertible {
   
   public var hashValue: Int {
     return "\(sura):\(ayah)".hashValue
+  }
+  
+  public mutating func switchExpandeState() {
+    self.isExpanded = !isExpanded
   }
   
   func getStartPage() -> Int {

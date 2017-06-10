@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import QuranSpeechEngine
 
 private let reuseIdentifier = "Cell"
-let kCellHeight: CGFloat = 100.0
+let kCellDefaultHeight: CGFloat = 100.0
+let kCellMaxHeight: CGFloat = 500.0
 
 class ResultsViewController: UIViewController {
   
@@ -27,10 +29,20 @@ class ResultsViewController: UIViewController {
     viewModel = ResultsTableViewModel(callback: { [weak self] state in
         self?.tableView.reloadData()
     })
+//    viewModel!.state.results = [
+//      QSAyah(sura: 1, ayah: 1),
+//      QSAyah(sura: 1, ayah: 2),
+//      QSAyah(sura: 1, ayah: 3),
+//      QSAyah(sura: 1, ayah: 4),
+//      QSAyah(sura: 1, ayah: 5),
+//      QSAyah(sura: 1, ayah: 6),
+//      QSAyah(sura: 1, ayah: 7)
+//    ]
     
-    self.tableView.rowHeight = UITableViewAutomaticDimension
-    self.tableView.estimatedRowHeight = kCellHeight
-    self.tableView.dataSource = viewModel
+    tableView.tableFooterView = UIView() // Removes empty cell separators
+    tableView.estimatedRowHeight = 60
+    tableView.rowHeight = UITableViewAutomaticDimension
+    tableView.dataSource = viewModel
     
   }
   
@@ -43,8 +55,13 @@ class ResultsViewController: UIViewController {
 
 extension ResultsViewController: UITableViewDelegate {
   
-  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return kCellHeight
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    var content = viewModel!.state.results[indexPath.row]
+    content.switchExpandeState()
+    viewModel!.state.results[indexPath.row] = content
+    tableView.beginUpdates()
+    tableView.reloadRows(at: [indexPath], with: .none)
+    tableView.endUpdates()
   }
   
 }

@@ -87,7 +87,7 @@ struct VoiceRecognitionRequest: QSRequest {
 }
 
 // MARK: - Helpers
-extension String {
+public extension String {
   var urlEscaped: String {
     return self.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
   }
@@ -96,12 +96,26 @@ extension String {
     return cast(self.data(using: .utf8))
   }
   
-  var html2AttributedString: NSAttributedString? {
+  public var html2AttributedString: NSAttributedString? {
     do {
-      return try NSAttributedString(data: Data(utf8),
-                                    options: [.documentType: NSAttributedString.DocumentType.html,
-                                              .characterEncoding: String.Encoding.utf8.rawValue],
-                                    documentAttributes: nil)
+      
+      let style = NSMutableParagraphStyle()
+      style.alignment = NSTextAlignment.right
+      
+      let richText = try NSMutableAttributedString(data: Data(utf8),
+                                            options: [.documentType: NSAttributedString.DocumentType.html,
+                                                      .characterEncoding: String.Encoding.utf8.rawValue],
+                                            documentAttributes: nil)
+      richText.addAttribute(.font,
+                            value: UIFont.preferredFont(forTextStyle: .title2),
+                            range: NSMakeRange(0, richText.length))
+      richText.addAttribute(.foregroundColor,
+                            value: UIColor.darkGray,
+                            range: NSMakeRange(0, richText.length))
+      richText.addAttribute( .paragraphStyle,
+                             value: style,
+                             range: NSMakeRange(0, richText.length))
+      return richText
     } catch {
       print("error:", error)
       return  nil

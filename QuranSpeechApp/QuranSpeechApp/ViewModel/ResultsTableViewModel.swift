@@ -51,8 +51,8 @@ extension ResultsTableViewModel: UITableViewDataSource {
   
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! AyahTableViewCell
-    cell.config(state.results[indexPath.row])
+    let cell = tableView .dequeueReusableCell(withIdentifier: String(describing: ExpandingTableViewCell.self), for: indexPath) as! ExpandingTableViewCell
+    cell.set(content: state.results[indexPath.row])
     return cell
   }
 }

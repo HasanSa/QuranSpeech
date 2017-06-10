@@ -51,7 +51,7 @@ class MainViewController: UIViewController {
   }
   
   override var preferredStatusBarStyle: UIStatusBarStyle {
-    return .lightContent
+    return .default
   }
 }
 
