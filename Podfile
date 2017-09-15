@@ -2,20 +2,21 @@ source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 workspace 'QuranSpeech'
-xcodeproj 'QuranSpeech/QuranSpeech.xcodeproj'
+xcodeproj 'QuranSpeechApp/QuranSpeechApp.xcodeproj'
+# xcodeproj 'QuranSpeechEngine/QuranSpeechEngine.xcodeproj'
 
 #def controller_pods
 #   pod 'Reachability'
 #end
  
 def ui_pods
-   pod 'LongPressRecordButton'
+   pod 'SwiftSiriWaveformView'
 end
  
 #target 'Controllers' do
 #   controller_pods
 #end
  
-target 'QuranSpeech' do
+target 'QuranSpeechApp' do
    ui_pods
 end

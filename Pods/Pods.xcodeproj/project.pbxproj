@@ -7,94 +7,112 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B828D4535C1E4D7F4C8C9B89F694816 /* Pods-QuranSpeech-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC378F782E35B5B109388D0C80CAEED2 /* Pods-QuranSpeech-dummy.m */; };
-		0E2F66A14A4C428C9611F16AB27F45BB /* LongPressRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2326B881A1AF1B4AC0D3C9C746EAB91 /* LongPressRecordButton.swift */; };
-		2266E1D364E54ECACCEAA2AA01F4E84E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		2CC00862DF769FE01BD847D19AE80D31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		7C24CDFD8388D96EED81B3DC22D0E810 /* LongPressRecordButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C317BDD2D571B6033AB0A81C350601 /* LongPressRecordButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		881B3075E9208FA3CDED78611D23515C /* LongPressRecordButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 075EC7D4706340FB3E3C8FC5816C442E /* LongPressRecordButton-dummy.m */; };
-		DFA25BB3FAD58B205FB96F27D0DC4B85 /* Pods-QuranSpeech-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82EB6E8B1ED04C27A13D06F410E3A824 /* Pods-QuranSpeech-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C05281C9DBFF7AF51AE32EDDE22AB13 /* SwiftSiriWaveformView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077EAE963D551282CD69C6442836F4B /* SwiftSiriWaveformView-dummy.m */; };
+		3C79C94E2717F17FE4559ED68B21325D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		8D88B064F8707A9FE5D2F6D0DA104575 /* SwiftSiriWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D054919728FCB27A03D287E07503172 /* SwiftSiriWaveformView.swift */; };
+		9F33FE0084B1800C7A5309A9C1FF9556 /* SwiftSiriWaveformView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90A33FB970FA4C227037CD3E66872A7E /* SwiftSiriWaveformView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3F27A70A0567A71D945B292A72DD06B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C2E955E067E9A2A8D1541DA5C3DD984E /* Pods-QuranSpeechApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDEFFE53442149E50876983D291CDAE /* Pods-QuranSpeechApp-dummy.m */; };
+		DDAA88A19AEB8E0FF7C4F529674F9C9F /* Pods-QuranSpeechApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 598D56DDB313A9C3120818798CBAA500 /* Pods-QuranSpeechApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1C7CF72576D25F25BE6F3E91AED076DC /* PBXContainerItemProxy */ = {
+		8D4B00AF99022579EE3D23BDF58C5C8E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0D55947D680CC6520303D461C7E9C48F;
-			remoteInfo = LongPressRecordButton;
+			remoteGlobalIDString = ADA2A359CE029AE28A1E05222410F51B;
+			remoteInfo = SwiftSiriWaveformView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		075EC7D4706340FB3E3C8FC5816C442E /* LongPressRecordButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LongPressRecordButton-dummy.m"; sourceTree = "<group>"; };
-		2DEC33A2048CF9BA400838A70207D1E9 /* LongPressRecordButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LongPressRecordButton.xcconfig; sourceTree = "<group>"; };
-		3F9EBE4C599E75DD4BBCCA15B945089A /* Pods-QuranSpeech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuranSpeech.release.xcconfig"; sourceTree = "<group>"; };
-		56EF030A87DE802191190859BF72AF88 /* Pods-QuranSpeech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuranSpeech.debug.xcconfig"; sourceTree = "<group>"; };
-		82EB6E8B1ED04C27A13D06F410E3A824 /* Pods-QuranSpeech-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuranSpeech-umbrella.h"; sourceTree = "<group>"; };
-		892D610E4DC0A0C7C8344EE895F76FB3 /* LongPressRecordButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LongPressRecordButton-prefix.pch"; sourceTree = "<group>"; };
-		8CB58B4653266EFC80A56DBF963AC7B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0984CBC41A393D7B3FAE9FB6B47D768F /* Pods-QuranSpeechApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuranSpeechApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		0E810C54C6C5E5513A8C77186ADBE055 /* Pods-QuranSpeechApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuranSpeechApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1AD3CD0485BE08A13CE4EB3AE53C0605 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D054919728FCB27A03D287E07503172 /* SwiftSiriWaveformView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSiriWaveformView.swift; path = Pod/Classes/SwiftSiriWaveformView.swift; sourceTree = "<group>"; };
+		27A49B795C94488798FF731B01EBAB2D /* SwiftSiriWaveformView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftSiriWaveformView.modulemap; sourceTree = "<group>"; };
+		2AF101FA369B61357F0B16A4433BDB91 /* SwiftSiriWaveformView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSiriWaveformView-prefix.pch"; sourceTree = "<group>"; };
+		39840E13C609F30064D75DC04E718355 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47355EAF872061D23706C86FA2542D4D /* Pods-QuranSpeechApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuranSpeechApp-frameworks.sh"; sourceTree = "<group>"; };
+		4FC4E07E102C4B2C7E367161134BB917 /* SwiftSiriWaveformView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSiriWaveformView.xcconfig; sourceTree = "<group>"; };
+		598D56DDB313A9C3120818798CBAA500 /* Pods-QuranSpeechApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuranSpeechApp-umbrella.h"; sourceTree = "<group>"; };
+		9077EAE963D551282CD69C6442836F4B /* SwiftSiriWaveformView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSiriWaveformView-dummy.m"; sourceTree = "<group>"; };
+		90A33FB970FA4C227037CD3E66872A7E /* SwiftSiriWaveformView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSiriWaveformView-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A6CD116D5199646B980A0F4752E3C2A8 /* Pods-QuranSpeech-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuranSpeech-frameworks.sh"; sourceTree = "<group>"; };
-		AF6EE89DECBD3FD592A0AD8D627C335C /* Pods-QuranSpeech-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuranSpeech-acknowledgements.plist"; sourceTree = "<group>"; };
-		B32B83DBC0F998C407232312356ABB40 /* LongPressRecordButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LongPressRecordButton.modulemap; sourceTree = "<group>"; };
-		B9682C570ED37619A4A67B5228EE2A2B /* Pods-QuranSpeech.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-QuranSpeech.modulemap"; sourceTree = "<group>"; };
-		BDA39D839FBBC96C495507E515052CAE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F90B5798B445E441E12FF460D352565 /* Pods_QuranSpeechApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QuranSpeechApp.framework; path = "Pods-QuranSpeechApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDDEFFE53442149E50876983D291CDAE /* Pods-QuranSpeechApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuranSpeechApp-dummy.m"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CDDA8817677F39414008DA54C0DBE167 /* LongPressRecordButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LongPressRecordButton.framework; path = LongPressRecordButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2326B881A1AF1B4AC0D3C9C746EAB91 /* LongPressRecordButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LongPressRecordButton.swift; path = LongPressRecordButton/LongPressRecordButton.swift; sourceTree = "<group>"; };
-		E1DDF46D5949FB79AA8A3D735101AEF8 /* Pods_QuranSpeech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QuranSpeech.framework; path = "Pods-QuranSpeech.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA0A159A75610019C756812505C3EF7E /* Pods-QuranSpeech-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuranSpeech-resources.sh"; sourceTree = "<group>"; };
-		F2C317BDD2D571B6033AB0A81C350601 /* LongPressRecordButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LongPressRecordButton-umbrella.h"; sourceTree = "<group>"; };
-		FBB35CD7C772D001C6023856710D3393 /* Pods-QuranSpeech-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuranSpeech-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FC378F782E35B5B109388D0C80CAEED2 /* Pods-QuranSpeech-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuranSpeech-dummy.m"; sourceTree = "<group>"; };
+		D0C9FA2166AB18BB6E5CBFDDB1C2E0D8 /* Pods-QuranSpeechApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuranSpeechApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D45FA5EBC610A1C3AFFFFA68FAD15231 /* Pods-QuranSpeechApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuranSpeechApp-resources.sh"; sourceTree = "<group>"; };
+		DFD0F8A5AEBF7CFF8817F8D09D7845C7 /* Pods-QuranSpeechApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuranSpeechApp.release.xcconfig"; sourceTree = "<group>"; };
+		E76B74EFBDD1C69F4F4CAD59E899631F /* SwiftSiriWaveformView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSiriWaveformView.framework; path = SwiftSiriWaveformView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDD40F11339FE1E0C6689D805FBA72C4 /* Pods-QuranSpeechApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-QuranSpeechApp.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6D7BDCA224D954925BBB6EB832F00CFA /* Frameworks */ = {
+		638BA0205CDAFB542F95F0F572F95488 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CC00862DF769FE01BD847D19AE80D31 /* Foundation.framework in Frameworks */,
+				B3F27A70A0567A71D945B292A72DD06B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0A9F34263F2105F03C2B91B9F13310F /* Frameworks */ = {
+		DD44DA3C3C63CA7FC53CB978F9AC8159 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2266E1D364E54ECACCEAA2AA01F4E84E /* Foundation.framework in Frameworks */,
+				3C79C94E2717F17FE4559ED68B21325D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		237C2A7E58A7F9DF5985033D630F0D2C /* Products */ = {
+		0A3EB8E09B480F187DBB3ACCE2E50353 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CDDA8817677F39414008DA54C0DBE167 /* LongPressRecordButton.framework */,
-				E1DDF46D5949FB79AA8A3D735101AEF8 /* Pods_QuranSpeech.framework */,
+				28D0A509234FCFFA579A4FFFF0B25931 /* SwiftSiriWaveformView */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		5D13A893FE42AB50CE3447E0376560D9 /* Pods-QuranSpeech */ = {
+		1DADA82BAAA22E715F76BFC1F54F6A1E /* Pods-QuranSpeechApp */ = {
 			isa = PBXGroup;
 			children = (
-				8CB58B4653266EFC80A56DBF963AC7B0 /* Info.plist */,
-				B9682C570ED37619A4A67B5228EE2A2B /* Pods-QuranSpeech.modulemap */,
-				FBB35CD7C772D001C6023856710D3393 /* Pods-QuranSpeech-acknowledgements.markdown */,
-				AF6EE89DECBD3FD592A0AD8D627C335C /* Pods-QuranSpeech-acknowledgements.plist */,
-				FC378F782E35B5B109388D0C80CAEED2 /* Pods-QuranSpeech-dummy.m */,
-				A6CD116D5199646B980A0F4752E3C2A8 /* Pods-QuranSpeech-frameworks.sh */,
-				EA0A159A75610019C756812505C3EF7E /* Pods-QuranSpeech-resources.sh */,
-				82EB6E8B1ED04C27A13D06F410E3A824 /* Pods-QuranSpeech-umbrella.h */,
-				56EF030A87DE802191190859BF72AF88 /* Pods-QuranSpeech.debug.xcconfig */,
-				3F9EBE4C599E75DD4BBCCA15B945089A /* Pods-QuranSpeech.release.xcconfig */,
+				1AD3CD0485BE08A13CE4EB3AE53C0605 /* Info.plist */,
+				EDD40F11339FE1E0C6689D805FBA72C4 /* Pods-QuranSpeechApp.modulemap */,
+				0E810C54C6C5E5513A8C77186ADBE055 /* Pods-QuranSpeechApp-acknowledgements.markdown */,
+				0984CBC41A393D7B3FAE9FB6B47D768F /* Pods-QuranSpeechApp-acknowledgements.plist */,
+				BDDEFFE53442149E50876983D291CDAE /* Pods-QuranSpeechApp-dummy.m */,
+				47355EAF872061D23706C86FA2542D4D /* Pods-QuranSpeechApp-frameworks.sh */,
+				D45FA5EBC610A1C3AFFFFA68FAD15231 /* Pods-QuranSpeechApp-resources.sh */,
+				598D56DDB313A9C3120818798CBAA500 /* Pods-QuranSpeechApp-umbrella.h */,
+				D0C9FA2166AB18BB6E5CBFDDB1C2E0D8 /* Pods-QuranSpeechApp.debug.xcconfig */,
+				DFD0F8A5AEBF7CFF8817F8D09D7845C7 /* Pods-QuranSpeechApp.release.xcconfig */,
 			);
-			name = "Pods-QuranSpeech";
-			path = "Target Support Files/Pods-QuranSpeech";
+			name = "Pods-QuranSpeechApp";
+			path = "Target Support Files/Pods-QuranSpeechApp";
+			sourceTree = "<group>";
+		};
+		28D0A509234FCFFA579A4FFFF0B25931 /* SwiftSiriWaveformView */ = {
+			isa = PBXGroup;
+			children = (
+				1D054919728FCB27A03D287E07503172 /* SwiftSiriWaveformView.swift */,
+				96B9956C8EBE4631C1A8C055D93A5634 /* Support Files */,
+			);
+			name = SwiftSiriWaveformView;
+			path = SwiftSiriWaveformView;
+			sourceTree = "<group>";
+		};
+		6851F301507A2757F874BD24750E47A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F90B5798B445E441E12FF460D352565 /* Pods_QuranSpeechApp.framework */,
+				E76B74EFBDD1C69F4F4CAD59E899631F /* SwiftSiriWaveformView.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -105,47 +123,37 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7B668E2A905CAFB3EEEAD0E3A467CBAB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				83ABA48103C23C346A0ACC93A2D33257 /* LongPressRecordButton */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				7B668E2A905CAFB3EEEAD0E3A467CBAB /* Pods */,
-				237C2A7E58A7F9DF5985033D630F0D2C /* Products */,
-				E724BB65746F865E55192E2A12BE5BDD /* Targets Support Files */,
+				0A3EB8E09B480F187DBB3ACCE2E50353 /* Pods */,
+				6851F301507A2757F874BD24750E47A6 /* Products */,
+				A867FA24CD3F3A68267641A553E333F2 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		83ABA48103C23C346A0ACC93A2D33257 /* LongPressRecordButton */ = {
+		96B9956C8EBE4631C1A8C055D93A5634 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D2326B881A1AF1B4AC0D3C9C746EAB91 /* LongPressRecordButton.swift */,
-				B8D7AEA8B6A599935AF8D05EF18B6B56 /* Support Files */,
-			);
-			name = LongPressRecordButton;
-			path = LongPressRecordButton;
-			sourceTree = "<group>";
-		};
-		B8D7AEA8B6A599935AF8D05EF18B6B56 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BDA39D839FBBC96C495507E515052CAE /* Info.plist */,
-				B32B83DBC0F998C407232312356ABB40 /* LongPressRecordButton.modulemap */,
-				2DEC33A2048CF9BA400838A70207D1E9 /* LongPressRecordButton.xcconfig */,
-				075EC7D4706340FB3E3C8FC5816C442E /* LongPressRecordButton-dummy.m */,
-				892D610E4DC0A0C7C8344EE895F76FB3 /* LongPressRecordButton-prefix.pch */,
-				F2C317BDD2D571B6033AB0A81C350601 /* LongPressRecordButton-umbrella.h */,
+				39840E13C609F30064D75DC04E718355 /* Info.plist */,
+				27A49B795C94488798FF731B01EBAB2D /* SwiftSiriWaveformView.modulemap */,
+				4FC4E07E102C4B2C7E367161134BB917 /* SwiftSiriWaveformView.xcconfig */,
+				9077EAE963D551282CD69C6442836F4B /* SwiftSiriWaveformView-dummy.m */,
+				2AF101FA369B61357F0B16A4433BDB91 /* SwiftSiriWaveformView-prefix.pch */,
+				90A33FB970FA4C227037CD3E66872A7E /* SwiftSiriWaveformView-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/LongPressRecordButton";
+			path = "../Target Support Files/SwiftSiriWaveformView";
+			sourceTree = "<group>";
+		};
+		A867FA24CD3F3A68267641A553E333F2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DADA82BAAA22E715F76BFC1F54F6A1E /* Pods-QuranSpeechApp */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -156,69 +164,61 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E724BB65746F865E55192E2A12BE5BDD /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5D13A893FE42AB50CE3447E0376560D9 /* Pods-QuranSpeech */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		15904936BA4360E8B926FEFC92037626 /* Headers */ = {
+		CCCD45FEFBF3C4379CC8F968F36968B7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFA25BB3FAD58B205FB96F27D0DC4B85 /* Pods-QuranSpeech-umbrella.h in Headers */,
+				9F33FE0084B1800C7A5309A9C1FF9556 /* SwiftSiriWaveformView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7823171D3E9E57EC20756DC6BE1A416A /* Headers */ = {
+		E353ABCE00A5054F6B94B22B14F237F6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C24CDFD8388D96EED81B3DC22D0E810 /* LongPressRecordButton-umbrella.h in Headers */,
+				DDAA88A19AEB8E0FF7C4F529674F9C9F /* Pods-QuranSpeechApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0D55947D680CC6520303D461C7E9C48F /* LongPressRecordButton */ = {
+		4886308E3465F31BC6E588A4FE1166DB /* Pods-QuranSpeechApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E8D3FEE41D57354CB48903D592B77CA /* Build configuration list for PBXNativeTarget "LongPressRecordButton" */;
+			buildConfigurationList = 326AAC195C999E27993260EDA23C5274 /* Build configuration list for PBXNativeTarget "Pods-QuranSpeechApp" */;
 			buildPhases = (
-				9AF1D0817B3485A8792D68004150848A /* Sources */,
-				6D7BDCA224D954925BBB6EB832F00CFA /* Frameworks */,
-				7823171D3E9E57EC20756DC6BE1A416A /* Headers */,
+				24C25A99BB7E4B59339821E5942D41D3 /* Sources */,
+				DD44DA3C3C63CA7FC53CB978F9AC8159 /* Frameworks */,
+				E353ABCE00A5054F6B94B22B14F237F6 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5E33E99444A9B3058331F10C30C6AD58 /* PBXTargetDependency */,
 			);
-			name = LongPressRecordButton;
-			productName = LongPressRecordButton;
-			productReference = CDDA8817677F39414008DA54C0DBE167 /* LongPressRecordButton.framework */;
+			name = "Pods-QuranSpeechApp";
+			productName = "Pods-QuranSpeechApp";
+			productReference = 9F90B5798B445E441E12FF460D352565 /* Pods_QuranSpeechApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BDFC6F446F202CED878EB5CE9B35761C /* Pods-QuranSpeech */ = {
+		ADA2A359CE029AE28A1E05222410F51B /* SwiftSiriWaveformView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7FB52075C9B75BDBDD127390F5E9C994 /* Build configuration list for PBXNativeTarget "Pods-QuranSpeech" */;
+			buildConfigurationList = 2CCB68599EE6BDFE6E596E72D6F95FF5 /* Build configuration list for PBXNativeTarget "SwiftSiriWaveformView" */;
 			buildPhases = (
-				17E1E37D21ACBAE0917152AA84D1AE44 /* Sources */,
-				F0A9F34263F2105F03C2B91B9F13310F /* Frameworks */,
-				15904936BA4360E8B926FEFC92037626 /* Headers */,
+				5381DB00E569DCDA85B4054EFF5E4A49 /* Sources */,
+				638BA0205CDAFB542F95F0F572F95488 /* Frameworks */,
+				CCCD45FEFBF3C4379CC8F968F36968B7 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				79909D8828C33C9BDFAAE6161B9D91B0 /* PBXTargetDependency */,
 			);
-			name = "Pods-QuranSpeech";
-			productName = "Pods-QuranSpeech";
-			productReference = E1DDF46D5949FB79AA8A3D735101AEF8 /* Pods_QuranSpeech.framework */;
+			name = SwiftSiriWaveformView;
+			productName = SwiftSiriWaveformView;
+			productReference = E76B74EFBDD1C69F4F4CAD59E899631F /* SwiftSiriWaveformView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -238,42 +238,42 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 237C2A7E58A7F9DF5985033D630F0D2C /* Products */;
+			productRefGroup = 6851F301507A2757F874BD24750E47A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0D55947D680CC6520303D461C7E9C48F /* LongPressRecordButton */,
-				BDFC6F446F202CED878EB5CE9B35761C /* Pods-QuranSpeech */,
+				4886308E3465F31BC6E588A4FE1166DB /* Pods-QuranSpeechApp */,
+				ADA2A359CE029AE28A1E05222410F51B /* SwiftSiriWaveformView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		17E1E37D21ACBAE0917152AA84D1AE44 /* Sources */ = {
+		24C25A99BB7E4B59339821E5942D41D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B828D4535C1E4D7F4C8C9B89F694816 /* Pods-QuranSpeech-dummy.m in Sources */,
+				C2E955E067E9A2A8D1541DA5C3DD984E /* Pods-QuranSpeechApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9AF1D0817B3485A8792D68004150848A /* Sources */ = {
+		5381DB00E569DCDA85B4054EFF5E4A49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				881B3075E9208FA3CDED78611D23515C /* LongPressRecordButton-dummy.m in Sources */,
-				0E2F66A14A4C428C9611F16AB27F45BB /* LongPressRecordButton.swift in Sources */,
+				0C05281C9DBFF7AF51AE32EDDE22AB13 /* SwiftSiriWaveformView-dummy.m in Sources */,
+				8D88B064F8707A9FE5D2F6D0DA104575 /* SwiftSiriWaveformView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		79909D8828C33C9BDFAAE6161B9D91B0 /* PBXTargetDependency */ = {
+		5E33E99444A9B3058331F10C30C6AD58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = LongPressRecordButton;
-			target = 0D55947D680CC6520303D461C7E9C48F /* LongPressRecordButton */;
-			targetProxy = 1C7CF72576D25F25BE6F3E91AED076DC /* PBXContainerItemProxy */;
+			name = SwiftSiriWaveformView;
+			target = ADA2A359CE029AE28A1E05222410F51B /* SwiftSiriWaveformView */;
+			targetProxy = 8D4B00AF99022579EE3D23BDF58C5C8E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -318,9 +318,9 @@
 			};
 			name = Release;
 		};
-		29A98D472CAFD223905DFBD7319FB1F0 /* Release */ = {
+		34CC39D67102D78F66280F29DE7EB147 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F9EBE4C599E75DD4BBCCA15B945089A /* Pods-QuranSpeech.release.xcconfig */;
+			baseConfigurationReference = 4FC4E07E102C4B2C7E367161134BB917 /* SwiftSiriWaveformView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -333,61 +333,26 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-QuranSpeech/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSiriWaveformView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-QuranSpeech/Pods-QuranSpeech.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_QuranSpeech;
+				PRODUCT_NAME = SwiftSiriWaveformView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		4656AA4936DC27B7DB33D28F60077395 /* Release */ = {
+		63429BFEE156C8C672E5259FBF184219 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DEC33A2048CF9BA400838A70207D1E9 /* LongPressRecordButton.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LongPressRecordButton/LongPressRecordButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LongPressRecordButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LongPressRecordButton/LongPressRecordButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = LongPressRecordButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		725B8A1626B9A8F615DBFFF33C584BC5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DEC33A2048CF9BA400838A70207D1E9 /* LongPressRecordButton.xcconfig */;
+			baseConfigurationReference = D0C9FA2166AB18BB6E5CBFDDB1C2E0D8 /* Pods-QuranSpeechApp.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -400,27 +365,65 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LongPressRecordButton/LongPressRecordButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LongPressRecordButton/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuranSpeechApp/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LongPressRecordButton/LongPressRecordButton.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuranSpeechApp/Pods-QuranSpeechApp.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = LongPressRecordButton;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QuranSpeechApp;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		800B3254929510233ED1C944D6971A84 /* Debug */ = {
+		651D1073C11418997CF3C9E09B500190 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56EF030A87DE802191190859BF72AF88 /* Pods-QuranSpeech.debug.xcconfig */;
+			baseConfigurationReference = DFD0F8A5AEBF7CFF8817F8D09D7845C7 /* Pods-QuranSpeechApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QuranSpeechApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuranSpeechApp/Pods-QuranSpeechApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QuranSpeechApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		745CE0DDD0DDE914194A2C56689295D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FC4E07E102C4B2C7E367161134BB917 /* SwiftSiriWaveformView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -433,21 +436,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-QuranSpeech/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSiriWaveformView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-QuranSpeech/Pods-QuranSpeech.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_QuranSpeech;
+				PRODUCT_NAME = SwiftSiriWaveformView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -501,6 +501,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2CCB68599EE6BDFE6E596E72D6F95FF5 /* Build configuration list for PBXNativeTarget "SwiftSiriWaveformView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				745CE0DDD0DDE914194A2C56689295D7 /* Debug */,
+				34CC39D67102D78F66280F29DE7EB147 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -510,20 +519,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E8D3FEE41D57354CB48903D592B77CA /* Build configuration list for PBXNativeTarget "LongPressRecordButton" */ = {
+		326AAC195C999E27993260EDA23C5274 /* Build configuration list for PBXNativeTarget "Pods-QuranSpeechApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B8A1626B9A8F615DBFFF33C584BC5 /* Debug */,
-				4656AA4936DC27B7DB33D28F60077395 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7FB52075C9B75BDBDD127390F5E9C994 /* Build configuration list for PBXNativeTarget "Pods-QuranSpeech" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				800B3254929510233ED1C944D6971A84 /* Debug */,
-				29A98D472CAFD223905DFBD7319FB1F0 /* Release */,
+				63429BFEE156C8C672E5259FBF184219 /* Debug */,
+				651D1073C11418997CF3C9E09B500190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,104 +7,59 @@
 //
 
 import Foundation
-import Speech
 
-protocol QSSpeechManagerDelegate: class {
-  func manager(speechRecognitionResponse response: QSResult<String>)
-  func manager(bufferRecognitionResponse response: QSResult<[Float]>)
+
+protocol QSSpeechProviderProtocol {
+  func requestPermission(completion: @escaping ((Bool) -> Void))
+  func startRecording(completion: @escaping QSSpeechResultsUpdateHandler)
+  func stopRecording()
+  var isRecording: Bool { get }
+  var resultsUpdateHandler: QSSpeechResultsUpdateHandler { set get }
 }
+
+enum SpeechProviderType {
+  case audioRecorder
+  case siri
+}
+
+extension SpeechProviderType {
+  func speechProvider() -> QSSpeechProviderProtocol {
+    switch self {
+    case .audioRecorder:
+      return AudioRecorderManager.default
+    case .siri:
+      return SiriSpeechManager.default
+    }
+  }
+}
+
+typealias QSSpeechResultsUpdateHandler = ((QSResult<Any>?, QSResult<[Float]>?) -> ())
 
 class QSSpeechManager {
+  let speechProvider: QSSpeechProviderProtocol?
   
-  static let `default` = QSSpeechManager()
-  fileprivate let audioEngine = AVAudioEngine()
-  fileprivate let speechRecognizer: SFSpeechRecognizer? = SFSpeechRecognizer(locale: Locale(identifier: "ar"))
-  fileprivate let request = SFSpeechAudioBufferRecognitionRequest()
-  fileprivate var recognitionTask: SFSpeechRecognitionTask?
-  
-  var status: Bool {
-    return SFSpeechRecognizer.authorizationStatus() == .authorized
+  init(type: SpeechProviderType) {
+    self.speechProvider = type.speechProvider()
   }
-  weak var delegate: QSSpeechManagerDelegate?
 }
-
-// MARK - PRIVATE
-extension QSSpeechManager {
-  
-  func requestAuthorization(completion: @escaping ((Bool) -> Void)) {
-    SFSpeechRecognizer.requestAuthorization { status in
-      OperationQueue.main.addOperation {
-        completion(status == .authorized)
-      }
-    }
-  }
-  
-  func setupAudioEngine() {
-    guard let node = audioEngine.inputNode else { return }
-    let recordingFormat = node.outputFormat(forBus: 0)
-    node.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { buffer, _ in
-      self.request.append(buffer)
-      let bufferAudioChannelData = Array(UnsafeBufferPointer(start: buffer.floatChannelData?[0], count:Int(buffer.frameLength)))
-      self.delegate?.manager(bufferRecognitionResponse: QSResult<[Float]>.success(bufferAudioChannelData))
-    }
-  }
-  
-  func prepareAudioEngine() {
-    audioEngine.prepare()
-    
-    do {
-      try audioEngine.start()
-    } catch {
-      return print(error)
-    }
-  }
-  
-  func analyzeAudio() {
-    recognitionTask = speechRecognizer?.recognitionTask(with: request, resultHandler: { result, error in
-      
-      if let result = result {
-        self.delegate?.manager(speechRecognitionResponse:
-          QSResult<String>.success(result.bestTranscription.formattedString))
-        
-      } else if let error = error {
-        self.delegate?.manager(speechRecognitionResponse:
-          QSResult<String>.failure(error))
-      }
-    })
-  }
-  
-  func stopAudioEngine() {
-    audioEngine.stop()
-    if let node = audioEngine.inputNode {
-      node.removeTap(onBus: 0)
-    }
-    recognitionTask?.cancel()
-  }
-  
-}
-
 
 // MARK - API
 extension QSSpeechManager {
   
-  func requestPermission(completion: @escaping ((Bool) -> Void)) {
-    requestAuthorization(completion: completion)
+  var isRecording: Bool {
+    return speechProvider!.isRecording
   }
   
-  func startRecording() {
-    // Setup audio engine and speech recognizer
-    setupAudioEngine()
-    
-    // Prepare and start recording
-    prepareAudioEngine()
-    
-    // Analyze the speech
-    analyzeAudio()
+  func requestPermission(completion: @escaping ((Bool) -> Void)) {
+    speechProvider?.requestPermission(completion: completion)
+  }
+  
+  func startRecording(completion: @escaping QSSpeechResultsUpdateHandler) {
+    speechProvider?.startRecording(completion: completion)
   }
   
   func stopRecording() {
-    // stop recording
-    stopAudioEngine()
+   speechProvider?.stopRecording()
   }
 }
 

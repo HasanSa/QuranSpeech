@@ -11,14 +11,14 @@ import Foundation
 typealias JSONDictionary = [AnyHashable:Any]
 
 struct QSResource<T> {
-  var url: URL
-  let parse: (Data) -> T?
+  var request: URLRequest
+  let jsonObject: (Data) -> T?
 }
 
 extension QSResource {
-  init(url: URL, parseJSON: @escaping (Any) -> T?) {
-    self.url = url
-    self.parse = { data in
+  init(request: URLRequest, parseJSON: @escaping (Any) -> T?) {
+    self.request = request
+    self.jsonObject = { data in
       let json = try? JSONSerialization.jsonObject(with: data, options: [])
       return json.flatMap(parseJSON)
     }
@@ -31,8 +31,8 @@ struct QSNetworkService {
     let session = URLSession(configuration: config)
     
     // make the request
-    let task = session.dataTask(with: resource.url) { (data, response, error) in
-      let result = data.flatMap(resource.parse)
+    let task = session.dataTask(with: resource.request) { (data, response, error) in
+      let result = data.flatMap(resource.jsonObject)
       callback(result)
       }
       task.resume()
