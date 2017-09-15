@@ -10,13 +10,13 @@ import UIKit
 import SwiftSiriWaveformView
 import QuranSpeechEngine
 
-protocol RecorderViewControllerDelegate: class {
+protocol ResizableDelegate: class {
   func shouldUpdateContainerView()
 }
 
 class RecorderViewController: UIViewController {
   
-  weak var delegate: RecorderViewControllerDelegate?
+  weak var delegate: ResizableDelegate?
   
   @IBOutlet weak var textLabel: UILabel!
   @IBOutlet weak var waveView: SwiftSiriWaveformView!

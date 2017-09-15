@@ -15,8 +15,12 @@ final public class QSQuranEngine {
   
   public static let `default` = QSQuranEngine()
   
+  lazy var speechManager: QSSpeechManager = {
+    return QSSpeechManager(type: .siri)
+  }()
+  
   public var isRecording: Bool {
-    return QSSpeechManager.default.isRecording
+    return speechManager.isRecording
   }
   
   public var resultsHandler: QSQuranEngineResultsHandler?
@@ -24,11 +28,6 @@ final public class QSQuranEngine {
 //  public var speechRecognitionAuthorized: Bool {
 //    return speechManager.status
 //  }
-  
-  lazy var speechManager: QSSpeechManager =  {
-    let speechMgr = QSSpeechManager.default
-    return speechMgr
-  }()
 }
 
 // MARK:- Private
@@ -36,28 +35,23 @@ extension QSQuranEngine {
   
   func generateSpeechResource(speech: String) -> QSResource<[QSAyah]>? {
     
-    let speechRequest = SpeechRequest(parameter: speech.urlEscaped)
+    let speechRequest = GCPSpeechRequest(parameter: speech)
     let request = URLRequest(url: speechRequest.targetURL)
     let resourceRequest = QSResource<[QSAyah]>(request: request) { json in
       
-      guard let dict = json as? JSONDictionary else {
+      guard let verses = json as? [JSONDictionary] else {
         return nil
       }
+//
+//      guard let data = dict["search"] as? JSONDictionary else {
+//        return nil
+//      }
+//
+//      guard let ayas = data["ayas"] as? JSONDictionary else {
+//        return nil
+//      }
       
-      guard let data = dict["search"] as? JSONDictionary else {
-        return nil
-      }
-      
-      guard let ayas = data["ayas"] as? JSONDictionary else {
-        return nil
-      }
-      
-      return ayas.keys.flatMap{ key in
-        if let ayahJSON = ayas[key] as? JSONDictionary {
-          return QSAyah(json: ayahJSON)
-        }
-        return nil
-      }
+      return verses.flatMap{ QSAyah(json: $0) }
     }
     
     return resourceRequest
@@ -136,29 +130,33 @@ public extension QSQuranEngine {
       if let speechResponse = speechResponse {
         switch speechResponse {
         case .success(let data):
-          guard let resourceRequest = self?.generateSpeechText(data: data as! Data) else {
-            return
-          }
-          QSQueue.background.async {
-            QSNetworkService.excute(resource: resourceRequest) { result in
-              QSQueue.main.async {
-                completion(QSResult<String>.success(result ?? ""), nil)
-                self?.search(for: result, completion: self?.resultsHandler)
+          if let data = data as? Data {
+            guard let resourceRequest = self?.generateSpeechText(data: data) else {
+              return
+            }
+            QSQueue.background.async {
+              QSNetworkService.excute(resource: resourceRequest) { result in
+                QSQueue.main.async {
+                  completion(QSResult<String>.success(result ?? ""), nil)
+                  self?.search(for: result, completion: self?.resultsHandler)
+                }
               }
+            }
+          }
+          if let result = data as? String {
+            QSQueue.main.async {
+              completion(QSResult<String>.success(result), nil)
+              self?.search(for: result, completion: self?.resultsHandler)
+              
             }
           }
         case .failure(_): break
         }
       }
       if let metersResponse = metersResponse {
-        completion(nil, metersResponse)
+        completion(nil, QSResult<Float>.success(metersResponse.value!.first ?? 0.0))
       }
     }
-    
-//    guard speechRecognitionAuthorized else {
-//      print("make sure you called requestAuthorization first, make sure that you added \n 'Privacy - Speech Recognition Usage Description' and 'Privacy - Microphone Usage Description' keys at info.plist")
-//      return
-//    }
   }
   
   public func stopRecording() {

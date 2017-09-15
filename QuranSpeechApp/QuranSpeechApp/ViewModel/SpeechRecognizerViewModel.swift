@@ -1,5 +1,5 @@
 //
-//  ViewModel.swift
+//  SpeechRecognizerViewModel.swift
 //  QuranSpeechEngine
 //
 //  Created by Hasan Sa on 30/04/2017.
@@ -22,12 +22,18 @@ class SpeechRecognizerViewModel: NSObject {
   
   typealias ViewModelCallback = ((SpeechRecognizerViewModelState) -> Void)
   
-  let quranEngine = QSQuranEngine.default
+  lazy var quranEngine: QSQuranEngine = {
+    let mgr = QSQuranEngine.default
+    mgr.requestSpeechAuthorization {_ in }
+    return mgr
+  }()
     
   
   var state: SpeechRecognizerViewModelState = SpeechRecognizerViewModelState(speechLabelText: nil, metersValue: 0.0) {
     didSet {
-      callback(state)
+      DispatchQueue.main.async { [unowned self] in
+        self.callback(self.state)
+      }
     }
   }
   

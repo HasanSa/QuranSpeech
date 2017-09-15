@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ysH-jg-ewA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ysH-jg-ewA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -128,15 +128,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVt-ql-0Jm">
-                                <rect key="frame" x="9.5" y="20" width="356" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQa-fR-KT9">
+                                <rect key="frame" x="9" y="20" width="356" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="9qz-Tk-BFj"/>
+                                    <constraint firstAttribute="height" constant="50" id="gjw-yE-aVI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Results">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resultsButtonTapped" destination="BQa-w9-upM" eventType="touchUpInside" id="KTB-f0-bCK"/>
+                                </connections>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="551" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ogV-mZ-hJP">
                                 <rect key="frame" x="0.0" y="70" width="375" height="617"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -196,16 +200,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="QQa-fR-KT9" firstAttribute="top" secondItem="GP3-Av-VcS" secondAttribute="bottom" id="6nB-4X-N5d"/>
                             <constraint firstItem="ogV-mZ-hJP" firstAttribute="width" secondItem="6Nm-Jy-DeM" secondAttribute="width" id="7gd-cu-MnC"/>
-                            <constraint firstItem="AVt-ql-0Jm" firstAttribute="centerX" secondItem="6Nm-Jy-DeM" secondAttribute="centerX" id="Fab-ZL-m6F"/>
-                            <constraint firstItem="ogV-mZ-hJP" firstAttribute="top" secondItem="AVt-ql-0Jm" secondAttribute="bottom" id="Q3R-Gk-lk2"/>
-                            <constraint firstItem="AVt-ql-0Jm" firstAttribute="top" secondItem="GP3-Av-VcS" secondAttribute="bottom" id="ZM2-cK-8Zp"/>
-                            <constraint firstItem="AVt-ql-0Jm" firstAttribute="width" secondItem="6Nm-Jy-DeM" secondAttribute="width" multiplier="0.95" id="fjq-3r-T2U"/>
+                            <constraint firstItem="ogV-mZ-hJP" firstAttribute="top" secondItem="QQa-fR-KT9" secondAttribute="bottom" id="Uc2-Do-avY"/>
+                            <constraint firstItem="QQa-fR-KT9" firstAttribute="centerX" secondItem="6Nm-Jy-DeM" secondAttribute="centerX" id="e2E-sC-GVK"/>
                             <constraint firstItem="ogV-mZ-hJP" firstAttribute="height" secondItem="6Nm-Jy-DeM" secondAttribute="height" multiplier="0.925" id="hMP-Mm-tqi"/>
                             <constraint firstItem="ogV-mZ-hJP" firstAttribute="centerX" secondItem="6Nm-Jy-DeM" secondAttribute="centerX" id="tPE-qc-TTW"/>
+                            <constraint firstItem="QQa-fR-KT9" firstAttribute="width" secondItem="6Nm-Jy-DeM" secondAttribute="width" multiplier="0.95" id="xu6-2l-ZzU"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="resultsButton" destination="QQa-fR-KT9" id="Qe7-Ty-mM3"/>
                         <outlet property="tableView" destination="ogV-mZ-hJP" id="Z3n-Zh-4zP"/>
                     </connections>
                 </viewController>

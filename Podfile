@@ -10,7 +10,6 @@ xcodeproj 'QuranSpeechApp/QuranSpeechApp.xcodeproj'
 #end
  
 def ui_pods
-   pod 'BubbleTransition', '~> 2.0.0'
    pod 'SwiftSiriWaveformView'
 end
  

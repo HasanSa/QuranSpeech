@@ -15,6 +15,8 @@ let kCellMaxHeight: CGFloat = 500.0
 
 class ResultsViewController: UIViewController {
   
+  @IBOutlet weak var resultsButton: UIButton!
+  
   @IBOutlet weak var tableView: UITableView! {
     didSet {
       tableView.delegate = self
@@ -23,21 +25,15 @@ class ResultsViewController: UIViewController {
   
   var viewModel: ResultsTableViewModel?
   
+  weak var delegate: ResizableDelegate?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    viewModel = ResultsTableViewModel(callback: { [weak self] state in
-        self?.tableView.reloadData()
+    viewModel = ResultsTableViewModel(callback: { [unowned self] state in
+      self.resultsButton.setTitle("Results (\(self.viewModel!.state.results.count))", for: .normal)
+        self.tableView.reloadData()
     })
-//    viewModel!.state.results = [
-//      QSAyah(sura: 1, ayah: 1),
-//      QSAyah(sura: 1, ayah: 2),
-//      QSAyah(sura: 1, ayah: 3),
-//      QSAyah(sura: 1, ayah: 4),
-//      QSAyah(sura: 1, ayah: 5),
-//      QSAyah(sura: 1, ayah: 6),
-//      QSAyah(sura: 1, ayah: 7)
-//    ]
     
     tableView.tableFooterView = UIView() // Removes empty cell separators
     tableView.estimatedRowHeight = 60
@@ -49,6 +45,10 @@ class ResultsViewController: UIViewController {
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
+  }
+  
+  @IBAction func resultsButtonTapped() {
+    self.delegate?.shouldUpdateContainerView()
   }
   
 }

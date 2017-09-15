@@ -18,7 +18,7 @@ enum State {
   
   mutating func muliplier() -> CGFloat {
     update()
-    return (self == .browsing) ? 0.25 : 1.005
+    return (self == .browsing) ? 0.25 : 0.95
   }
 }
 
@@ -91,13 +91,14 @@ fileprivate extension MainViewController {
       add(viewController: recorderVC, on: recorderContainerView)
     }
     
-    if let resultsVC = self.storyboard?.instantiateViewController(withIdentifier: "ResultsVC") {
+    if let resultsVC = self.storyboard?.instantiateViewController(withIdentifier: "ResultsVC") as? ResultsViewController {
+      resultsVC.delegate = self
       add(viewController: resultsVC, on: resultsContainerView)
     }
   }
 }
 
-extension MainViewController: RecorderViewControllerDelegate {
+extension MainViewController: ResizableDelegate {
   func shouldUpdateContainerView() {
     self.updateViewHeightConstraint()
   }

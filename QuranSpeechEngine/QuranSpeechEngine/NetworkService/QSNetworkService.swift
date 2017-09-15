@@ -12,13 +12,13 @@ typealias JSONDictionary = [AnyHashable:Any]
 
 struct QSResource<T> {
   var request: URLRequest
-  let parse: (Data) -> T?
+  let jsonObject: (Data) -> T?
 }
 
 extension QSResource {
   init(request: URLRequest, parseJSON: @escaping (Any) -> T?) {
     self.request = request
-    self.parse = { data in
+    self.jsonObject = { data in
       let json = try? JSONSerialization.jsonObject(with: data, options: [])
       return json.flatMap(parseJSON)
     }
@@ -32,7 +32,7 @@ struct QSNetworkService {
     
     // make the request
     let task = session.dataTask(with: resource.request) { (data, response, error) in
-      let result = data.flatMap(resource.parse)
+      let result = data.flatMap(resource.jsonObject)
       callback(result)
       }
       task.resume()

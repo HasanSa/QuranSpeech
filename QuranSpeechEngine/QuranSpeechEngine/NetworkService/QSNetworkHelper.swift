@@ -22,7 +22,7 @@ protocol QSRequest {
   
 }
 
-struct SpeechRequest: QSRequest {
+struct AlfanosSpeechRequest: QSRequest {
   var request: NSMutableURLRequest?
   
   var method: QSRequestMethod? = .search
@@ -36,11 +36,50 @@ struct SpeechRequest: QSRequest {
   var targetURL: URL {
     var urlPath = path
     urlPath += parameter ?? ""
-    return URL(string: urlPath)!
+    if let data = urlPath.data(using: String.Encoding.ascii),
+      let encodedPath = String.init(data: data, encoding: .utf8) {
+      return URL(string: encodedPath)!
+    }
+    return URL(string: urlPath.urlEscaped)!
   }
   
   init(parameter: String) {
     self.parameter = parameter
+  }
+}
+
+extension String {
+  var forSorting: String {
+    let simple = folding(options: [.diacriticInsensitive, .widthInsensitive, .caseInsensitive], locale: nil)
+    let nonAlphaNumeric = CharacterSet.alphanumerics.inverted
+    var inverted = simple.components(separatedBy: nonAlphaNumeric).joined(separator: " ")
+    return String(inverted.characters.dropFirst())
+  }
+}
+
+
+struct GCPSpeechRequest: QSRequest {
+  
+  var request: NSMutableURLRequest?
+  
+  var method: QSRequestMethod? = .search
+  
+  var path: String {
+    return "https://quran-speech.appspot.com/quran/bySearchTerm/"
+  }
+  
+  var parameter: String?
+  
+  var targetURL: URL {
+    var urlPath = path
+    urlPath += parameter ?? ""
+    print(urlPath.urlEscaped)
+    return URL(string: urlPath.urlEscaped)!
+  }
+  
+  init(parameter: String) {
+    self.parameter = parameter.forSorting
+
   }
 }
 
@@ -88,8 +127,9 @@ struct VoiceRecognitionRequest: QSRequest {
 
 // MARK: - Helpers
 public extension String {
+  
   var urlEscaped: String {
-    return self.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
+    return self.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
   }
   
   var utf8Encoded: Data {

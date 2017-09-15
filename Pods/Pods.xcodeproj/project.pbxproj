@@ -7,96 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		048B6AD6154DCD9425D0628D4BB332D2 /* BubbleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86DA54B1841EF61F8C145A531B07889 /* BubbleTransition.swift */; };
-		07FF1EB3B1E1CE212855AF965B6580E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		15B92BD6A32F0D58A1079138ED72C4F1 /* BubbleTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D97CC1B704BE00154AD1A3555E361F1 /* BubbleTransition-dummy.m */; };
-		323AA08AB6D729B9B062CA7FF5B527B6 /* Pods-QuranSpeechApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDEFFE53442149E50876983D291CDAE /* Pods-QuranSpeechApp-dummy.m */; };
-		3EC46921C15E375FA37CB428C7139893 /* Pods-QuranSpeechApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 598D56DDB313A9C3120818798CBAA500 /* Pods-QuranSpeechApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F159A8B3F6F29DAC1F4DD3BFC4892BA /* BubbleTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DED6259D9DEBE0934746E7EE081DBCE1 /* BubbleTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5CF438D13FB24951006794F7AF5E018F /* SwiftSiriWaveformView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B1B1A2547A8F29D060CA52E83AAD48 /* SwiftSiriWaveformView-dummy.m */; };
-		956BA123C5221E14D7BCC6655C8ACCCF /* SwiftSiriWaveformView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C24AE633D9BD1CE6FD7F9913F5F680DC /* SwiftSiriWaveformView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0C533AF06E10626BCFC054F0BFEEF26 /* SwiftSiriWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404341E66542B94FBB1632894EE81612 /* SwiftSiriWaveformView.swift */; };
-		E762CAB9CCD33B092B718BC242331834 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		FB6B0A4D7ED9638E26497AB7B4109E38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		0C05281C9DBFF7AF51AE32EDDE22AB13 /* SwiftSiriWaveformView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9077EAE963D551282CD69C6442836F4B /* SwiftSiriWaveformView-dummy.m */; };
+		3C79C94E2717F17FE4559ED68B21325D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		8D88B064F8707A9FE5D2F6D0DA104575 /* SwiftSiriWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D054919728FCB27A03D287E07503172 /* SwiftSiriWaveformView.swift */; };
+		9F33FE0084B1800C7A5309A9C1FF9556 /* SwiftSiriWaveformView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90A33FB970FA4C227037CD3E66872A7E /* SwiftSiriWaveformView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3F27A70A0567A71D945B292A72DD06B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C2E955E067E9A2A8D1541DA5C3DD984E /* Pods-QuranSpeechApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDEFFE53442149E50876983D291CDAE /* Pods-QuranSpeechApp-dummy.m */; };
+		DDAA88A19AEB8E0FF7C4F529674F9C9F /* Pods-QuranSpeechApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 598D56DDB313A9C3120818798CBAA500 /* Pods-QuranSpeechApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		94ADE7B119857EE6A59CEC26822D0993 /* PBXContainerItemProxy */ = {
+		8D4B00AF99022579EE3D23BDF58C5C8E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 38830187D9E171E7B43047ED06A08ADC;
-			remoteInfo = BubbleTransition;
-		};
-		F1DB17D793EF1747CB5FDA0A194E7D49 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0C792B7FF14A082A25E37FBFC5C5C1B2;
+			remoteGlobalIDString = ADA2A359CE029AE28A1E05222410F51B;
 			remoteInfo = SwiftSiriWaveformView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00049DAA640A51710811E2A20749BC9F /* Pods_QuranSpeechApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QuranSpeechApp.framework; path = "Pods-QuranSpeechApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		038B4331DAE00F1F33201B5F434D7F2E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0984CBC41A393D7B3FAE9FB6B47D768F /* Pods-QuranSpeechApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuranSpeechApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		0E810C54C6C5E5513A8C77186ADBE055 /* Pods-QuranSpeechApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuranSpeechApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1AD3CD0485BE08A13CE4EB3AE53C0605 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2964C20673ECE37B60BBD6D69E52D194 /* SwiftSiriWaveformView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSiriWaveformView.xcconfig; sourceTree = "<group>"; };
-		2E80D6F5C8AC99BCF4F5D855FF794A57 /* BubbleTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BubbleTransition.xcconfig; sourceTree = "<group>"; };
-		30B1B1A2547A8F29D060CA52E83AAD48 /* SwiftSiriWaveformView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSiriWaveformView-dummy.m"; sourceTree = "<group>"; };
-		404341E66542B94FBB1632894EE81612 /* SwiftSiriWaveformView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSiriWaveformView.swift; path = Pod/Classes/SwiftSiriWaveformView.swift; sourceTree = "<group>"; };
+		1D054919728FCB27A03D287E07503172 /* SwiftSiriWaveformView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSiriWaveformView.swift; path = Pod/Classes/SwiftSiriWaveformView.swift; sourceTree = "<group>"; };
+		27A49B795C94488798FF731B01EBAB2D /* SwiftSiriWaveformView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftSiriWaveformView.modulemap; sourceTree = "<group>"; };
+		2AF101FA369B61357F0B16A4433BDB91 /* SwiftSiriWaveformView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSiriWaveformView-prefix.pch"; sourceTree = "<group>"; };
+		39840E13C609F30064D75DC04E718355 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47355EAF872061D23706C86FA2542D4D /* Pods-QuranSpeechApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuranSpeechApp-frameworks.sh"; sourceTree = "<group>"; };
+		4FC4E07E102C4B2C7E367161134BB917 /* SwiftSiriWaveformView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSiriWaveformView.xcconfig; sourceTree = "<group>"; };
 		598D56DDB313A9C3120818798CBAA500 /* Pods-QuranSpeechApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuranSpeechApp-umbrella.h"; sourceTree = "<group>"; };
-		59EB8267E5A16EF63746817306E10B4E /* BubbleTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BubbleTransition.modulemap; sourceTree = "<group>"; };
-		70A43A34A8AF86854D9790AC244E3E85 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9077EAE963D551282CD69C6442836F4B /* SwiftSiriWaveformView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSiriWaveformView-dummy.m"; sourceTree = "<group>"; };
+		90A33FB970FA4C227037CD3E66872A7E /* SwiftSiriWaveformView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSiriWaveformView-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D97CC1B704BE00154AD1A3555E361F1 /* BubbleTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BubbleTransition-dummy.m"; sourceTree = "<group>"; };
-		A265836E87FE514430374858E4287413 /* BubbleTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BubbleTransition.framework; path = BubbleTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A56B363111E8EC57EAEBE8A9DC0803DD /* SwiftSiriWaveformView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSiriWaveformView.framework; path = SwiftSiriWaveformView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B86DA54B1841EF61F8C145A531B07889 /* BubbleTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleTransition.swift; path = Source/BubbleTransition.swift; sourceTree = "<group>"; };
+		9F90B5798B445E441E12FF460D352565 /* Pods_QuranSpeechApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QuranSpeechApp.framework; path = "Pods-QuranSpeechApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDEFFE53442149E50876983D291CDAE /* Pods-QuranSpeechApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuranSpeechApp-dummy.m"; sourceTree = "<group>"; };
-		C24AE633D9BD1CE6FD7F9913F5F680DC /* SwiftSiriWaveformView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSiriWaveformView-umbrella.h"; sourceTree = "<group>"; };
-		C274AEEB319B5F45BE21D858532B7DEF /* BubbleTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BubbleTransition-prefix.pch"; sourceTree = "<group>"; };
-		C975F4BFAFF77D777A0F66F460E4EFAB /* SwiftSiriWaveformView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSiriWaveformView-prefix.pch"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D0C9FA2166AB18BB6E5CBFDDB1C2E0D8 /* Pods-QuranSpeechApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuranSpeechApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D45FA5EBC610A1C3AFFFFA68FAD15231 /* Pods-QuranSpeechApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuranSpeechApp-resources.sh"; sourceTree = "<group>"; };
-		DAF817A8F98AE13265D0AE2E7B3CBB36 /* SwiftSiriWaveformView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftSiriWaveformView.modulemap; sourceTree = "<group>"; };
-		DED6259D9DEBE0934746E7EE081DBCE1 /* BubbleTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BubbleTransition-umbrella.h"; sourceTree = "<group>"; };
 		DFD0F8A5AEBF7CFF8817F8D09D7845C7 /* Pods-QuranSpeechApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuranSpeechApp.release.xcconfig"; sourceTree = "<group>"; };
+		E76B74EFBDD1C69F4F4CAD59E899631F /* SwiftSiriWaveformView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSiriWaveformView.framework; path = SwiftSiriWaveformView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD40F11339FE1E0C6689D805FBA72C4 /* Pods-QuranSpeechApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-QuranSpeechApp.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		523728BB56A17C620CBFBEF413B7B058 /* Frameworks */ = {
+		638BA0205CDAFB542F95F0F572F95488 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB6B0A4D7ED9638E26497AB7B4109E38 /* Foundation.framework in Frameworks */,
+				B3F27A70A0567A71D945B292A72DD06B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		793E9289B2346024EFF680909DFF26F2 /* Frameworks */ = {
+		DD44DA3C3C63CA7FC53CB978F9AC8159 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E762CAB9CCD33B092B718BC242331834 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D756DA14932342915B06B5A24C295CE3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				07FF1EB3B1E1CE212855AF965B6580E1 /* Foundation.framework in Frameworks */,
+				3C79C94E2717F17FE4559ED68B21325D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A3EB8E09B480F187DBB3ACCE2E50353 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28D0A509234FCFFA579A4FFFF0B25931 /* SwiftSiriWaveformView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1DADA82BAAA22E715F76BFC1F54F6A1E /* Pods-QuranSpeechApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,37 +96,23 @@
 			path = "Target Support Files/Pods-QuranSpeechApp";
 			sourceTree = "<group>";
 		};
-		21072CC39D7C84CAA92030646E253F14 /* SwiftSiriWaveformView */ = {
+		28D0A509234FCFFA579A4FFFF0B25931 /* SwiftSiriWaveformView */ = {
 			isa = PBXGroup;
 			children = (
-				404341E66542B94FBB1632894EE81612 /* SwiftSiriWaveformView.swift */,
-				C40781825EC1BF259F28841D726471FD /* Support Files */,
+				1D054919728FCB27A03D287E07503172 /* SwiftSiriWaveformView.swift */,
+				96B9956C8EBE4631C1A8C055D93A5634 /* Support Files */,
 			);
 			name = SwiftSiriWaveformView;
 			path = SwiftSiriWaveformView;
 			sourceTree = "<group>";
 		};
-		60AB3CE238EEF5C310D3F9D0C534CD6C /* Pods */ = {
+		6851F301507A2757F874BD24750E47A6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F265D676D4CF57F14FE5AF2FFE798BF8 /* BubbleTransition */,
-				21072CC39D7C84CAA92030646E253F14 /* SwiftSiriWaveformView */,
+				9F90B5798B445E441E12FF460D352565 /* Pods_QuranSpeechApp.framework */,
+				E76B74EFBDD1C69F4F4CAD59E899631F /* SwiftSiriWaveformView.framework */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		65644FAD6A00E1B2B2EB7B0A30B435BF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				59EB8267E5A16EF63746817306E10B4E /* BubbleTransition.modulemap */,
-				2E80D6F5C8AC99BCF4F5D855FF794A57 /* BubbleTransition.xcconfig */,
-				9D97CC1B704BE00154AD1A3555E361F1 /* BubbleTransition-dummy.m */,
-				C274AEEB319B5F45BE21D858532B7DEF /* BubbleTransition-prefix.pch */,
-				DED6259D9DEBE0934746E7EE081DBCE1 /* BubbleTransition-umbrella.h */,
-				70A43A34A8AF86854D9790AC244E3E85 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/BubbleTransition";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -161,10 +128,24 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				60AB3CE238EEF5C310D3F9D0C534CD6C /* Pods */,
-				EDF257C6A075454C0EEABBD62EFDE812 /* Products */,
+				0A3EB8E09B480F187DBB3ACCE2E50353 /* Pods */,
+				6851F301507A2757F874BD24750E47A6 /* Products */,
 				A867FA24CD3F3A68267641A553E333F2 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		96B9956C8EBE4631C1A8C055D93A5634 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				39840E13C609F30064D75DC04E718355 /* Info.plist */,
+				27A49B795C94488798FF731B01EBAB2D /* SwiftSiriWaveformView.modulemap */,
+				4FC4E07E102C4B2C7E367161134BB917 /* SwiftSiriWaveformView.xcconfig */,
+				9077EAE963D551282CD69C6442836F4B /* SwiftSiriWaveformView-dummy.m */,
+				2AF101FA369B61357F0B16A4433BDB91 /* SwiftSiriWaveformView-prefix.pch */,
+				90A33FB970FA4C227037CD3E66872A7E /* SwiftSiriWaveformView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSiriWaveformView";
 			sourceTree = "<group>";
 		};
 		A867FA24CD3F3A68267641A553E333F2 /* Targets Support Files */ = {
@@ -183,77 +164,53 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C40781825EC1BF259F28841D726471FD /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				038B4331DAE00F1F33201B5F434D7F2E /* Info.plist */,
-				DAF817A8F98AE13265D0AE2E7B3CBB36 /* SwiftSiriWaveformView.modulemap */,
-				2964C20673ECE37B60BBD6D69E52D194 /* SwiftSiriWaveformView.xcconfig */,
-				30B1B1A2547A8F29D060CA52E83AAD48 /* SwiftSiriWaveformView-dummy.m */,
-				C975F4BFAFF77D777A0F66F460E4EFAB /* SwiftSiriWaveformView-prefix.pch */,
-				C24AE633D9BD1CE6FD7F9913F5F680DC /* SwiftSiriWaveformView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftSiriWaveformView";
-			sourceTree = "<group>";
-		};
-		EDF257C6A075454C0EEABBD62EFDE812 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A265836E87FE514430374858E4287413 /* BubbleTransition.framework */,
-				00049DAA640A51710811E2A20749BC9F /* Pods_QuranSpeechApp.framework */,
-				A56B363111E8EC57EAEBE8A9DC0803DD /* SwiftSiriWaveformView.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F265D676D4CF57F14FE5AF2FFE798BF8 /* BubbleTransition */ = {
-			isa = PBXGroup;
-			children = (
-				B86DA54B1841EF61F8C145A531B07889 /* BubbleTransition.swift */,
-				65644FAD6A00E1B2B2EB7B0A30B435BF /* Support Files */,
-			);
-			name = BubbleTransition;
-			path = BubbleTransition;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		04333389C8450AA486FA870E0F4C6D90 /* Headers */ = {
+		CCCD45FEFBF3C4379CC8F968F36968B7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F159A8B3F6F29DAC1F4DD3BFC4892BA /* BubbleTransition-umbrella.h in Headers */,
+				9F33FE0084B1800C7A5309A9C1FF9556 /* SwiftSiriWaveformView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76B261871A659359EEA15931895EA1AD /* Headers */ = {
+		E353ABCE00A5054F6B94B22B14F237F6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				956BA123C5221E14D7BCC6655C8ACCCF /* SwiftSiriWaveformView-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E5BA8990DF875BAB1A7282EC7E7BF12D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3EC46921C15E375FA37CB428C7139893 /* Pods-QuranSpeechApp-umbrella.h in Headers */,
+				DDAA88A19AEB8E0FF7C4F529674F9C9F /* Pods-QuranSpeechApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0C792B7FF14A082A25E37FBFC5C5C1B2 /* SwiftSiriWaveformView */ = {
+		4886308E3465F31BC6E588A4FE1166DB /* Pods-QuranSpeechApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21699E6B4B3DB0E080C9B18092694A9A /* Build configuration list for PBXNativeTarget "SwiftSiriWaveformView" */;
+			buildConfigurationList = 326AAC195C999E27993260EDA23C5274 /* Build configuration list for PBXNativeTarget "Pods-QuranSpeechApp" */;
 			buildPhases = (
-				0C963D6472C843D31A4815A60CF4A93C /* Sources */,
-				523728BB56A17C620CBFBEF413B7B058 /* Frameworks */,
-				76B261871A659359EEA15931895EA1AD /* Headers */,
+				24C25A99BB7E4B59339821E5942D41D3 /* Sources */,
+				DD44DA3C3C63CA7FC53CB978F9AC8159 /* Frameworks */,
+				E353ABCE00A5054F6B94B22B14F237F6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E33E99444A9B3058331F10C30C6AD58 /* PBXTargetDependency */,
+			);
+			name = "Pods-QuranSpeechApp";
+			productName = "Pods-QuranSpeechApp";
+			productReference = 9F90B5798B445E441E12FF460D352565 /* Pods_QuranSpeechApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ADA2A359CE029AE28A1E05222410F51B /* SwiftSiriWaveformView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CCB68599EE6BDFE6E596E72D6F95FF5 /* Build configuration list for PBXNativeTarget "SwiftSiriWaveformView" */;
+			buildPhases = (
+				5381DB00E569DCDA85B4054EFF5E4A49 /* Sources */,
+				638BA0205CDAFB542F95F0F572F95488 /* Frameworks */,
+				CCCD45FEFBF3C4379CC8F968F36968B7 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -261,43 +218,7 @@
 			);
 			name = SwiftSiriWaveformView;
 			productName = SwiftSiriWaveformView;
-			productReference = A56B363111E8EC57EAEBE8A9DC0803DD /* SwiftSiriWaveformView.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		38830187D9E171E7B43047ED06A08ADC /* BubbleTransition */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 80A1B16222697C3079DBB028B38F7DBE /* Build configuration list for PBXNativeTarget "BubbleTransition" */;
-			buildPhases = (
-				DC1D173450EDD70117FFCBCB61B9624E /* Sources */,
-				D756DA14932342915B06B5A24C295CE3 /* Frameworks */,
-				04333389C8450AA486FA870E0F4C6D90 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BubbleTransition;
-			productName = BubbleTransition;
-			productReference = A265836E87FE514430374858E4287413 /* BubbleTransition.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		757167BF4435CC97282667785F5F0ABD /* Pods-QuranSpeechApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 191F471A2261EB3DD8D9903651418208 /* Build configuration list for PBXNativeTarget "Pods-QuranSpeechApp" */;
-			buildPhases = (
-				FC5C8FE1B14F0E5F9C55A47A3C4F2B06 /* Sources */,
-				793E9289B2346024EFF680909DFF26F2 /* Frameworks */,
-				E5BA8990DF875BAB1A7282EC7E7BF12D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				31BD637FC3BEF8D8F0080FD37DF5B15D /* PBXTargetDependency */,
-				641F2EC1335C9DBB12134CC0769C85C7 /* PBXTargetDependency */,
-			);
-			name = "Pods-QuranSpeechApp";
-			productName = "Pods-QuranSpeechApp";
-			productReference = 00049DAA640A51710811E2A20749BC9F /* Pods_QuranSpeechApp.framework */;
+			productReference = E76B74EFBDD1C69F4F4CAD59E899631F /* SwiftSiriWaveformView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -317,58 +238,42 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = EDF257C6A075454C0EEABBD62EFDE812 /* Products */;
+			productRefGroup = 6851F301507A2757F874BD24750E47A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				38830187D9E171E7B43047ED06A08ADC /* BubbleTransition */,
-				757167BF4435CC97282667785F5F0ABD /* Pods-QuranSpeechApp */,
-				0C792B7FF14A082A25E37FBFC5C5C1B2 /* SwiftSiriWaveformView */,
+				4886308E3465F31BC6E588A4FE1166DB /* Pods-QuranSpeechApp */,
+				ADA2A359CE029AE28A1E05222410F51B /* SwiftSiriWaveformView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0C963D6472C843D31A4815A60CF4A93C /* Sources */ = {
+		24C25A99BB7E4B59339821E5942D41D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CF438D13FB24951006794F7AF5E018F /* SwiftSiriWaveformView-dummy.m in Sources */,
-				A0C533AF06E10626BCFC054F0BFEEF26 /* SwiftSiriWaveformView.swift in Sources */,
+				C2E955E067E9A2A8D1541DA5C3DD984E /* Pods-QuranSpeechApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC1D173450EDD70117FFCBCB61B9624E /* Sources */ = {
+		5381DB00E569DCDA85B4054EFF5E4A49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15B92BD6A32F0D58A1079138ED72C4F1 /* BubbleTransition-dummy.m in Sources */,
-				048B6AD6154DCD9425D0628D4BB332D2 /* BubbleTransition.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC5C8FE1B14F0E5F9C55A47A3C4F2B06 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				323AA08AB6D729B9B062CA7FF5B527B6 /* Pods-QuranSpeechApp-dummy.m in Sources */,
+				0C05281C9DBFF7AF51AE32EDDE22AB13 /* SwiftSiriWaveformView-dummy.m in Sources */,
+				8D88B064F8707A9FE5D2F6D0DA104575 /* SwiftSiriWaveformView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		31BD637FC3BEF8D8F0080FD37DF5B15D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BubbleTransition;
-			target = 38830187D9E171E7B43047ED06A08ADC /* BubbleTransition */;
-			targetProxy = 94ADE7B119857EE6A59CEC26822D0993 /* PBXContainerItemProxy */;
-		};
-		641F2EC1335C9DBB12134CC0769C85C7 /* PBXTargetDependency */ = {
+		5E33E99444A9B3058331F10C30C6AD58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftSiriWaveformView;
-			target = 0C792B7FF14A082A25E37FBFC5C5C1B2 /* SwiftSiriWaveformView */;
-			targetProxy = F1DB17D793EF1747CB5FDA0A194E7D49 /* PBXContainerItemProxy */;
+			target = ADA2A359CE029AE28A1E05222410F51B /* SwiftSiriWaveformView */;
+			targetProxy = 8D4B00AF99022579EE3D23BDF58C5C8E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -413,9 +318,9 @@
 			};
 			name = Release;
 		};
-		2F44A3DB0F953209942632B878CD6949 /* Release */ = {
+		34CC39D67102D78F66280F29DE7EB147 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2964C20673ECE37B60BBD6D69E52D194 /* SwiftSiriWaveformView.xcconfig */;
+			baseConfigurationReference = 4FC4E07E102C4B2C7E367161134BB917 /* SwiftSiriWaveformView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -445,9 +350,9 @@
 			};
 			name = Release;
 		};
-		31EBDDEBED32EE941E1C062A88D38EA9 /* Debug */ = {
+		63429BFEE156C8C672E5259FBF184219 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2964C20673ECE37B60BBD6D69E52D194 /* SwiftSiriWaveformView.xcconfig */;
+			baseConfigurationReference = D0C9FA2166AB18BB6E5CBFDDB1C2E0D8 /* Pods-QuranSpeechApp.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -460,57 +365,28 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSiriWaveformView/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuranSpeechApp/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuranSpeechApp/Pods-QuranSpeechApp.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftSiriWaveformView;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QuranSpeechApp;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		3A3635FA00C5D5529E3BB9F701E1E9B0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E80D6F5C8AC99BCF4F5D855FF794A57 /* BubbleTransition.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BubbleTransition/BubbleTransition-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BubbleTransition/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BubbleTransition/BubbleTransition.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = BubbleTransition;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3AA0DE595CFCDF2A07AAAC59D3FCCD13 /* Release */ = {
+		651D1073C11418997CF3C9E09B500190 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DFD0F8A5AEBF7CFF8817F8D09D7845C7 /* Pods-QuranSpeechApp.release.xcconfig */;
 			buildSettings = {
@@ -545,9 +421,9 @@
 			};
 			name = Release;
 		};
-		4B6AB436CD1EF39126046D620BC7C118 /* Debug */ = {
+		745CE0DDD0DDE914194A2C56689295D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0C9FA2166AB18BB6E5CBFDDB1C2E0D8 /* Pods-QuranSpeechApp.debug.xcconfig */;
+			baseConfigurationReference = 4FC4E07E102C4B2C7E367161134BB917 /* SwiftSiriWaveformView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -560,21 +436,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-QuranSpeechApp/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSiriWaveformView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-QuranSpeechApp/Pods-QuranSpeechApp.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftSiriWaveformView/SwiftSiriWaveformView.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_QuranSpeechApp;
+				PRODUCT_NAME = SwiftSiriWaveformView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -625,56 +498,14 @@
 			};
 			name = Debug;
 		};
-		E48CEABB707FB3499F2C8A62D26FE00F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E80D6F5C8AC99BCF4F5D855FF794A57 /* BubbleTransition.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BubbleTransition/BubbleTransition-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BubbleTransition/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BubbleTransition/BubbleTransition.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = BubbleTransition;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		191F471A2261EB3DD8D9903651418208 /* Build configuration list for PBXNativeTarget "Pods-QuranSpeechApp" */ = {
+		2CCB68599EE6BDFE6E596E72D6F95FF5 /* Build configuration list for PBXNativeTarget "SwiftSiriWaveformView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4B6AB436CD1EF39126046D620BC7C118 /* Debug */,
-				3AA0DE595CFCDF2A07AAAC59D3FCCD13 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		21699E6B4B3DB0E080C9B18092694A9A /* Build configuration list for PBXNativeTarget "SwiftSiriWaveformView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				31EBDDEBED32EE941E1C062A88D38EA9 /* Debug */,
-				2F44A3DB0F953209942632B878CD6949 /* Release */,
+				745CE0DDD0DDE914194A2C56689295D7 /* Debug */,
+				34CC39D67102D78F66280F29DE7EB147 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -688,11 +519,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		80A1B16222697C3079DBB028B38F7DBE /* Build configuration list for PBXNativeTarget "BubbleTransition" */ = {
+		326AAC195C999E27993260EDA23C5274 /* Build configuration list for PBXNativeTarget "Pods-QuranSpeechApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E48CEABB707FB3499F2C8A62D26FE00F /* Debug */,
-				3A3635FA00C5D5529E3BB9F701E1E9B0 /* Release */,
+				63429BFEE156C8C672E5259FBF184219 /* Debug */,
+				651D1073C11418997CF3C9E09B500190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
