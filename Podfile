@@ -10,7 +10,8 @@ xcodeproj 'QuranSpeechApp/QuranSpeechApp.xcodeproj'
 #end
  
 def ui_pods
-   pod 'SwiftSiriWaveformView'
+   pod 'SwiftSiriWaveformView’
+   #pod ‘Material’
 end
  
 #target 'Controllers' do

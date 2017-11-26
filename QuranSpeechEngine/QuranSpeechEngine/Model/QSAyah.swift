@@ -24,7 +24,9 @@
     public let sura: Int
     public let ayah: Int
     public let text: String?
-    public var isExpanded = false
+    public var imgUrl: URL? {
+      return URL(string: "https://cdn.alquran.cloud/media/image/\(sura)/\(ayah)")
+    }
     
     public init(sura: Int, ayah: Int, text: String? = nil) {
       self.sura = sura
@@ -35,10 +37,7 @@
     public var hashValue: Int {
       return "\(sura):\(ayah)".hashValue
     }
-    
-    public mutating func switchExpandeState() {
-      self.isExpanded = !isExpanded
-    }
+  
     
     func getStartPage() -> Int {
       
@@ -105,33 +104,33 @@
   
   extension QSAyah {
     // GCP API RESPONSE
-    init?(json: JSONDictionary) {
+    init?(heroku json: JSONDictionary) {
       guard let suraId = json["surah"] as? Int,
         let ayaId = json["verse"] as? Int,
         let text = json["text"] as? String else {
           return nil
       }
-      
+
       self.sura = suraId
       self.ayah = ayaId
       self.text = text
     }
-    // ALFANOOSE API RESPONSE
     
-    //  init?(json: JSONDictionary) {
-    //    guard let identifier = json["identifier"] as? JSONDictionary,
-    //      let suraId = identifier["sura_id"] as? Int,
-    //      let ayaId = identifier["aya_id"] as? Int else {
-    //        return nil
-    //    }
-    //
-    //    guard let aya = json["aya"] as? JSONDictionary,
-    //      let text = aya["text"] as? String else {
-    //        return nil
-    //    }
-    //
-    //    self.sura = suraId
-    //    self.ayah = ayaId
-    //    self.text = text
-    //  }
+    // ALFANOOSE API RESPONSE
+    init?(alfanos json: JSONDictionary) {
+      guard let identifier = json["identifier"] as? JSONDictionary,
+        let suraId = identifier["sura_id"] as? Int,
+        let ayaId = identifier["aya_id"] as? Int else {
+          return nil
+      }
+      
+      guard let aya = json["aya"] as? JSONDictionary,
+        let text = aya["text"] as? String else {
+          return nil
+      }
+      
+      self.sura = suraId
+      self.ayah = ayaId
+      self.text = text.html2String
+    }
   }
