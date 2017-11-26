@@ -33,25 +33,48 @@ final public class QSQuranEngine {
 // MARK:- Private
 extension QSQuranEngine {
   
-  func generateSpeechResource(speech: String) -> QSResource<[QSAyah]>? {
+  func generateRandomResource() -> QSResource<QSAyah>? {
     
-    let speechRequest = GCPSpeechRequest(parameter: speech)
-    let request = URLRequest(url: speechRequest.targetURL)
-    let resourceRequest = QSResource<[QSAyah]>(request: request) { json in
+    let resource = HerokuRequest()
+    resource.method = .random
+    let request = URLRequest(url: resource.targetURL)
+    let resourceRequest = QSResource<QSAyah>(request: request) { json in
       
-      guard let verses = json as? [JSONDictionary] else {
+      guard let verse = json as? JSONDictionary else {
         return nil
       }
-//
-//      guard let data = dict["search"] as? JSONDictionary else {
-//        return nil
-//      }
-//
-//      guard let ayas = data["ayas"] as? JSONDictionary else {
-//        return nil
-//      }
+      return QSAyah(heroku: verse)
+    }
+    
+    return resourceRequest
+  }
+  
+  func generateResource(parameter: String? = nil) -> QSResource<[QSAyah]>? {
+    
+    let resource = AlfanosRequest(parameter: parameter)
+    let request = URLRequest(url: resource.targetURL)
+    let resourceRequest = QSResource<[QSAyah]>(request: request) { json in
       
-      return verses.flatMap{ QSAyah(json: $0) }
+      guard let dict = json as? JSONDictionary else {
+        return nil
+      }
+      
+      guard let data = dict["search"] as? JSONDictionary else {
+        return nil
+      }
+
+      guard let verses = data["ayas"] as? JSONDictionary else {
+        return nil
+      }
+      
+      return verses.keys.flatMap{ key in
+        if let ayahJSON = verses[key] as? JSONDictionary {
+          return QSAyah(alfanos: ayahJSON)
+        }
+        return nil
+      }
+      
+//      return verses.flatMap{ QSAyah(json: $0) }
     }
     
     return resourceRequest
@@ -85,7 +108,7 @@ extension QSQuranEngine {
   
   func search(for text: String?, completion: QSQuranEngineResultsHandler?) {
     if let speechText = text {
-      guard !speechText.characters.isEmpty else {
+      guard !speechText.isEmpty else {
         return
       }
       
@@ -93,7 +116,7 @@ extension QSQuranEngine {
         return
       }
       
-      guard let resourceRequest = generateSpeechResource(speech: speechText) else {
+      guard let resourceRequest = generateResource(parameter: speechText) else {
         return
       }
       QSQueue.main.async {
@@ -109,7 +132,28 @@ extension QSQuranEngine {
       }
     }
   }
+  
+  func random(completion: QSQuranEngineResultsHandler?) {
+    
+    guard let completion = completion else {
+      return
+    }
+    
+    guard let resourceRequest = generateRandomResource() else {
+      return
+    }
+    
+    QSQueue.background.async {
+      QSNetworkService.excute(resource: resourceRequest) { verse in
+        QSQueue.main.async {
+          let verses = (verse != nil) ? [verse!] : []
+          completion(QSResult<[QSAyah]>.success(verses))
+        }
+      }
+    }
+  }
 }
+
 
 // MARK:- Interface
 public extension QSQuranEngine {
@@ -138,7 +182,7 @@ public extension QSQuranEngine {
               QSNetworkService.excute(resource: resourceRequest) { result in
                 QSQueue.main.async {
                   completion(QSResult<String>.success(result ?? ""), nil)
-                  self?.search(for: result, completion: self?.resultsHandler)
+                  // self?.search(for: result, completion: self?.resultsHandler)
                 }
               }
             }
@@ -161,6 +205,15 @@ public extension QSQuranEngine {
   
   public func stopRecording() {
     speechManager.stopRecording()
+  }
+  
+  
+  public func fetchVerses(for text: String?, completion: QSQuranEngineResultsHandler?) {
+    self.search(for: text, completion: completion)
+  }
+  
+  public func randomVerse(completion: QSQuranEngineResultsHandler?) {
+    self.random(completion: completion)
   }
   
 }

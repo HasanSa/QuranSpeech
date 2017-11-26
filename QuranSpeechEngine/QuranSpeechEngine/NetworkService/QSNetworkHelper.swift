@@ -9,8 +9,9 @@
 import Foundation
 import UIKit
 
-enum QSRequestMethod {
+enum QSRequestMethod: String {
   case search
+  case random
   case analysis
 }
 
@@ -22,7 +23,7 @@ protocol QSRequest {
   
 }
 
-struct AlfanosSpeechRequest: QSRequest {
+struct AlfanosRequest: QSRequest {
   var request: NSMutableURLRequest?
   
   var method: QSRequestMethod? = .search
@@ -31,20 +32,15 @@ struct AlfanosSpeechRequest: QSRequest {
     return "https://www.alfanous.org/jos2?action=search&query="
   }
   
-  var parameter: String?
+  var parameter: String = ""
   
   var targetURL: URL {
-    var urlPath = path
-    urlPath += parameter ?? ""
-    if let data = urlPath.data(using: String.Encoding.ascii),
-      let encodedPath = String.init(data: data, encoding: .utf8) {
-      return URL(string: encodedPath)!
-    }
-    return URL(string: urlPath.urlEscaped)!
+    let urlPath = ("\(path)\(parameter.forSorting)").urlEscaped
+    return URL(string: urlPath)!
   }
   
-  init(parameter: String) {
-    self.parameter = parameter
+  init(parameter: String? = nil) {
+    self.parameter = parameter ?? ""
   }
 }
 
@@ -52,34 +48,31 @@ extension String {
   var forSorting: String {
     let simple = folding(options: [.diacriticInsensitive, .widthInsensitive, .caseInsensitive], locale: nil)
     let nonAlphaNumeric = CharacterSet.alphanumerics.inverted
-    var inverted = simple.components(separatedBy: nonAlphaNumeric).joined(separator: " ")
-    return String(inverted.characters.dropFirst())
+    let inverted = simple.components(separatedBy: nonAlphaNumeric).joined(separator: " ")
+    return String(inverted.dropFirst())
   }
 }
 
 
-struct GCPSpeechRequest: QSRequest {
+class HerokuRequest: QSRequest {
   
   var request: NSMutableURLRequest?
   
-  var method: QSRequestMethod? = .search
+  var method: QSRequestMethod = .search
   
   var path: String {
-    return "https://quran-speech.appspot.com/quran/bySearchTerm/"
+    return "https://immense-quran-api.herokuapp.com/\(method.rawValue)/"
   }
   
-  var parameter: String?
+  var parameter: String = ""
   
   var targetURL: URL {
-    var urlPath = path
-    urlPath += parameter ?? ""
-    print(urlPath.urlEscaped)
-    return URL(string: urlPath.urlEscaped)!
+    let urlPath = ("\(path)\(parameter.forSorting)").urlEscaped
+    return URL(string: urlPath)!
   }
   
-  init(parameter: String) {
-    self.parameter = parameter.forSorting
-
+  init(parameter: String? = nil) {
+    self.parameter = parameter ?? ""
   }
 }
 

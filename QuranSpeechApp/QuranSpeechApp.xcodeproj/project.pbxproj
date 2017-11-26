@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB361D351EE66FF200DC5BA5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB361D341EE66FF200DC5BA5 /* MainViewController.swift */; };
-		BB361D371EE6701400DC5BA5 /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB361D361EE6701400DC5BA5 /* RecorderViewController.swift */; };
-		BB361D391EE6702400DC5BA5 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB361D381EE6702400DC5BA5 /* ResultsViewController.swift */; };
 		BB4890461EE2D96600B55CBA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4890451EE2D96600B55CBA /* Launch Screen.storyboard */; };
 		BB4890471EE2DB3400B55CBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4890411EE2D90500B55CBA /* AppDelegate.swift */; };
-		BB4890551EE2DBA700B55CBA /* AyahTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB48904E1EE2DBA700B55CBA /* AyahTableViewCell.swift */; };
-		BB4890591EE2DBA700B55CBA /* SpeechRecognizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4890541EE2DBA700B55CBA /* SpeechRecognizerViewModel.swift */; };
 		BB48905B1EE2DC0C00B55CBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB48905A1EE2DC0C00B55CBA /* Main.storyboard */; };
 		BB4890611EE2DC6F00B55CBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4890601EE2DC6F00B55CBA /* Images.xcassets */; };
-		BB4890661EE45E3000B55CBA /* AudioRecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4890651EE45E3000B55CBA /* AudioRecordingView.swift */; };
-		BB4890681EE4F7B100B55CBA /* ResultsTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4890671EE4F7B100B55CBA /* ResultsTableViewModel.swift */; };
-		BB76C5CB1EEA830A00840718 /* ExpandingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB76C5CA1EEA830A00840718 /* ExpandingTableViewCell.swift */; };
+		BBAAFA1E1F75A23D00BDC204 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAAFA1D1F75A23D00BDC204 /* Coordinator.swift */; };
+		BBAAFA201F75A27400BDC204 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAAFA1F1F75A27400BDC204 /* AppCoordinator.swift */; };
+		BBAAFA221F75AD8200BDC204 /* TodayCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAAFA211F75AD8200BDC204 /* TodayCoordinator.swift */; };
+		BBAAFA241F75B06A00BDC204 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAAFA231F75B06A00BDC204 /* SearchCoordinator.swift */; };
+		BBAAFA261F75B30800BDC204 /* ResultsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAAFA251F75B30800BDC204 /* ResultsCoordinator.swift */; };
+		BBAAFA281F75B7E800BDC204 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAAFA271F75B7E800BDC204 /* TodayViewController.swift */; };
+		BBAAFA2A1F75B8AD00BDC204 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAAFA291F75B8AD00BDC204 /* AppViewController.swift */; };
+		BBAAFA2E1F75BAD100BDC204 /* TodayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAAFA2D1F75BAD100BDC204 /* TodayViewModel.swift */; };
+		BBAAFA311F75BE4A00BDC204 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAAFA301F75BE4A00BDC204 /* ResultsViewController.swift */; };
+		BBAAFA351F75C0BA00BDC204 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAAFA341F75C0BA00BDC204 /* AppViewModel.swift */; };
+		BBAAFA371F75C16E00BDC204 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAAFA361F75C16E00BDC204 /* SearchViewModel.swift */; };
+		BBAAFA391F75C18D00BDC204 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAAFA381F75C18D00BDC204 /* SearchViewController.swift */; };
+		BBC20AD81F6C9F44008D6964 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC20AD71F6C9F44008D6964 /* Box.swift */; };
+		BBCB26A91F76943200630E62 /* ResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCB26A81F76943200630E62 /* ResultsViewModel.swift */; };
+		BBCB26B01F76B18C00630E62 /* Graph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBCB26AE1F76B18C00630E62 /* Graph.framework */; };
+		BBCB26B11F76B18C00630E62 /* Graph.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BBCB26AE1F76B18C00630E62 /* Graph.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BBCB26B21F76B18C00630E62 /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBCB26AF1F76B18C00630E62 /* Material.framework */; };
+		BBCB26B31F76B18C00630E62 /* Material.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BBCB26AF1F76B18C00630E62 /* Material.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BBD484181EB569AD00B0D254 /* QuranSpeechEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD484171EB569AD00B0D254 /* QuranSpeechEngine.framework */; };
 		BBD484191EB569AD00B0D254 /* QuranSpeechEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BBD484171EB569AD00B0D254 /* QuranSpeechEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C2C44166D384FDC071A1F3CB /* Pods_QuranSpeechApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD696FCBD7207C87331B33E /* Pods_QuranSpeechApp.framework */; };
@@ -32,6 +42,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				BBD484191EB569AD00B0D254 /* QuranSpeechEngine.framework in Embed Frameworks */,
+				BBCB26B11F76B18C00630E62 /* Graph.framework in Embed Frameworks */,
+				BBCB26B31F76B18C00630E62 /* Material.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,20 +54,28 @@
 		5DD696FCBD7207C87331B33E /* Pods_QuranSpeechApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuranSpeechApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B6376384F2AE75DCB039D2 /* Pods-QuranSpeechApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuranSpeechApp.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-QuranSpeechApp/Pods-QuranSpeechApp.debug.xcconfig"; sourceTree = "<group>"; };
 		872C2A90A4F6FB16D0C05AD2 /* Pods_QuranSpeech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuranSpeech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB361D341EE66FF200DC5BA5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		BB361D361EE6701400DC5BA5 /* RecorderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderViewController.swift; sourceTree = "<group>"; };
-		BB361D381EE6702400DC5BA5 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		BB3DEA0C1EB5597900118EA7 /* QuranSpeechApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuranSpeechApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB4890411EE2D90500B55CBA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB4890421EE2D90500B55CBA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB4890451EE2D96600B55CBA /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "QuranSpeechApp/Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
-		BB48904E1EE2DBA700B55CBA /* AyahTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AyahTableViewCell.swift; sourceTree = "<group>"; };
-		BB4890541EE2DBA700B55CBA /* SpeechRecognizerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognizerViewModel.swift; sourceTree = "<group>"; };
 		BB48905A1EE2DC0C00B55CBA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = QuranSpeechApp/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		BB4890601EE2DC6F00B55CBA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = QuranSpeechApp/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		BB4890651EE45E3000B55CBA /* AudioRecordingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioRecordingView.swift; sourceTree = "<group>"; };
-		BB4890671EE4F7B100B55CBA /* ResultsTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableViewModel.swift; sourceTree = "<group>"; };
-		BB76C5CA1EEA830A00840718 /* ExpandingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpandingTableViewCell.swift; path = "../../../../../../../Downloads/ExpandingTableViewCell-master/ExpandingCell/ExpandingTableViewCell.swift"; sourceTree = "<group>"; };
+		BBAAFA1D1F75A23D00BDC204 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		BBAAFA1F1F75A27400BDC204 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		BBAAFA211F75AD8200BDC204 /* TodayCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCoordinator.swift; sourceTree = "<group>"; };
+		BBAAFA231F75B06A00BDC204 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		BBAAFA251F75B30800BDC204 /* ResultsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCoordinator.swift; sourceTree = "<group>"; };
+		BBAAFA271F75B7E800BDC204 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		BBAAFA291F75B8AD00BDC204 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		BBAAFA2D1F75BAD100BDC204 /* TodayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewModel.swift; sourceTree = "<group>"; };
+		BBAAFA301F75BE4A00BDC204 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		BBAAFA341F75C0BA00BDC204 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		BBAAFA361F75C16E00BDC204 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		BBAAFA381F75C18D00BDC204 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BBC20AD71F6C9F44008D6964 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		BBCB26A81F76943200630E62 /* ResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewModel.swift; sourceTree = "<group>"; };
+		BBCB26AE1F76B18C00630E62 /* Graph.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Graph.framework; path = Carthage/Build/iOS/Graph.framework; sourceTree = "<group>"; };
+		BBCB26AF1F76B18C00630E62 /* Material.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Material.framework; path = Carthage/Build/iOS/Material.framework; sourceTree = "<group>"; };
 		BBD484171EB569AD00B0D254 /* QuranSpeechEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QuranSpeechEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C964E1D4DE1CE6C82B715C /* Pods-QuranSpeechApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuranSpeechApp.release.xcconfig"; path = "../Pods/Target Support Files/Pods-QuranSpeechApp/Pods-QuranSpeechApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBCB26B01F76B18C00630E62 /* Graph.framework in Frameworks */,
+				BBCB26B21F76B18C00630E62 /* Material.framework in Frameworks */,
 				BBD484181EB569AD00B0D254 /* QuranSpeechEngine.framework in Frameworks */,
 				C2C44166D384FDC071A1F3CB /* Pods_QuranSpeechApp.framework in Frameworks */,
 			);
@@ -85,6 +107,8 @@
 		7ECB5BC819A831FB0263342D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BBCB26AE1F76B18C00630E62 /* Graph.framework */,
+				BBCB26AF1F76B18C00630E62 /* Material.framework */,
 				BBD484171EB569AD00B0D254 /* QuranSpeechEngine.framework */,
 				872C2A90A4F6FB16D0C05AD2 /* Pods_QuranSpeech.framework */,
 				5DD696FCBD7207C87331B33E /* Pods_QuranSpeechApp.framework */,
@@ -114,9 +138,10 @@
 			isa = PBXGroup;
 			children = (
 				BB4890401EE2D90500B55CBA /* Application */,
-				BB48904D1EE2DBA700B55CBA /* View */,
-				BB48904F1EE2DBA700B55CBA /* ViewController */,
-				BB4890531EE2DBA700B55CBA /* ViewModel */,
+				BBAAFA1C1F75A21E00BDC204 /* Coordinators */,
+				BB4890531EE2DBA700B55CBA /* ViewModels */,
+				BB48904F1EE2DBA700B55CBA /* ViewControllers */,
+				BBCB26B51F76B25000630E62 /* Views */,
 				BBEFA66F1EBDE98000961473 /* Resources */,
 				BB4890601EE2DC6F00B55CBA /* Images.xcassets */,
 			);
@@ -133,37 +158,49 @@
 			path = QuranSpeechApp/Application;
 			sourceTree = SOURCE_ROOT;
 		};
-		BB48904D1EE2DBA700B55CBA /* View */ = {
+		BB48904F1EE2DBA700B55CBA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				BB48904E1EE2DBA700B55CBA /* AyahTableViewCell.swift */,
-				BB76C5CA1EEA830A00840718 /* ExpandingTableViewCell.swift */,
-				BB4890651EE45E3000B55CBA /* AudioRecordingView.swift */,
+				BBAAFA291F75B8AD00BDC204 /* AppViewController.swift */,
+				BBAAFA271F75B7E800BDC204 /* TodayViewController.swift */,
+				BBAAFA381F75C18D00BDC204 /* SearchViewController.swift */,
+				BBAAFA301F75BE4A00BDC204 /* ResultsViewController.swift */,
 			);
-			name = View;
-			path = QuranSpeechApp/View;
+			name = ViewControllers;
+			path = QuranSpeechApp/ViewControllers;
 			sourceTree = SOURCE_ROOT;
 		};
-		BB48904F1EE2DBA700B55CBA /* ViewController */ = {
+		BB4890531EE2DBA700B55CBA /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				BB361D341EE66FF200DC5BA5 /* MainViewController.swift */,
-				BB361D361EE6701400DC5BA5 /* RecorderViewController.swift */,
-				BB361D381EE6702400DC5BA5 /* ResultsViewController.swift */,
+				BBC20AD71F6C9F44008D6964 /* Box.swift */,
+				BBAAFA341F75C0BA00BDC204 /* AppViewModel.swift */,
+				BBAAFA2D1F75BAD100BDC204 /* TodayViewModel.swift */,
+				BBAAFA361F75C16E00BDC204 /* SearchViewModel.swift */,
+				BBCB26A81F76943200630E62 /* ResultsViewModel.swift */,
 			);
-			name = ViewController;
-			path = QuranSpeechApp/ViewController;
+			name = ViewModels;
+			path = QuranSpeechApp/ViewModels;
 			sourceTree = SOURCE_ROOT;
 		};
-		BB4890531EE2DBA700B55CBA /* ViewModel */ = {
+		BBAAFA1C1F75A21E00BDC204 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				BB4890541EE2DBA700B55CBA /* SpeechRecognizerViewModel.swift */,
-				BB4890671EE4F7B100B55CBA /* ResultsTableViewModel.swift */,
+				BBAAFA1D1F75A23D00BDC204 /* Coordinator.swift */,
+				BBAAFA1F1F75A27400BDC204 /* AppCoordinator.swift */,
+				BBAAFA211F75AD8200BDC204 /* TodayCoordinator.swift */,
+				BBAAFA231F75B06A00BDC204 /* SearchCoordinator.swift */,
+				BBAAFA251F75B30800BDC204 /* ResultsCoordinator.swift */,
 			);
-			name = ViewModel;
-			path = QuranSpeechApp/ViewModel;
-			sourceTree = SOURCE_ROOT;
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		BBCB26B51F76B25000630E62 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
 		};
 		BBEFA66F1EBDE98000961473 /* Resources */ = {
 			isa = PBXGroup;
@@ -275,7 +312,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		FD948FEB7B93427701CD4650 /* [CP] Copy Pods Resources */ = {
@@ -300,15 +337,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB4890661EE45E3000B55CBA /* AudioRecordingView.swift in Sources */,
-				BB4890551EE2DBA700B55CBA /* AyahTableViewCell.swift in Sources */,
-				BB4890681EE4F7B100B55CBA /* ResultsTableViewModel.swift in Sources */,
+				BBAAFA311F75BE4A00BDC204 /* ResultsViewController.swift in Sources */,
+				BBAAFA201F75A27400BDC204 /* AppCoordinator.swift in Sources */,
+				BBAAFA351F75C0BA00BDC204 /* AppViewModel.swift in Sources */,
+				BBAAFA241F75B06A00BDC204 /* SearchCoordinator.swift in Sources */,
+				BBAAFA2A1F75B8AD00BDC204 /* AppViewController.swift in Sources */,
+				BBAAFA371F75C16E00BDC204 /* SearchViewModel.swift in Sources */,
+				BBCB26A91F76943200630E62 /* ResultsViewModel.swift in Sources */,
+				BBAAFA281F75B7E800BDC204 /* TodayViewController.swift in Sources */,
+				BBAAFA221F75AD8200BDC204 /* TodayCoordinator.swift in Sources */,
+				BBAAFA391F75C18D00BDC204 /* SearchViewController.swift in Sources */,
+				BBAAFA2E1F75BAD100BDC204 /* TodayViewModel.swift in Sources */,
+				BBAAFA1E1F75A23D00BDC204 /* Coordinator.swift in Sources */,
 				BB4890471EE2DB3400B55CBA /* AppDelegate.swift in Sources */,
-				BB76C5CB1EEA830A00840718 /* ExpandingTableViewCell.swift in Sources */,
-				BB361D391EE6702400DC5BA5 /* ResultsViewController.swift in Sources */,
-				BB361D351EE66FF200DC5BA5 /* MainViewController.swift in Sources */,
-				BB4890591EE2DBA700B55CBA /* SpeechRecognizerViewModel.swift in Sources */,
-				BB361D371EE6701400DC5BA5 /* RecorderViewController.swift in Sources */,
+				BBAAFA261F75B30800BDC204 /* ResultsCoordinator.swift in Sources */,
+				BBC20AD81F6C9F44008D6964 /* Box.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +469,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A3JC2SBNCR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/QuranSpeechApp/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HasanSa.QuranSpeechApp;
@@ -441,6 +488,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A3JC2SBNCR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/QuranSpeechApp/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HasanSa.QuranSpeechApp;
